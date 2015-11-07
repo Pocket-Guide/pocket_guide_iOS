@@ -1,0 +1,6 @@
+framework module Pods_PocketGuide {
+  umbrella header "Pods-PocketGuide-umbrella.h"
+
+  export *
+  module * { export * }
+}
