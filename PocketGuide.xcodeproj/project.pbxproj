@@ -10,6 +10,14 @@
 		8A6F7F313D35E9E780E973E8 /* Pods_PocketGuide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61097D7A896CB74DCCB851C0 /* Pods_PocketGuide.framework */; };
 		E2026E001BEDF8D9000F8FBF /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2026DFE1BEDF8D9000F8FBF /* Alamofire.framework */; };
 		E2026E011BEDF8D9000F8FBF /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2026DFF1BEDF8D9000F8FBF /* SwiftyJSON.framework */; };
+		E2498FC81BEE100B0027467F /* LogInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2498FC71BEE100B0027467F /* LogInModel.swift */; };
+		E2498FCD1BEE19A80027467F /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2498FCC1BEE19A80027467F /* LogInViewController.swift */; };
+		E2498FCF1BEE19B90027467F /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2498FCE1BEE19B90027467F /* LogInView.swift */; };
+		E2498FD11BEE19C70027467F /* LogInView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2498FD01BEE19C70027467F /* LogInView.xib */; };
+		E2D607E41BF462C300E15A7F /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D607E31BF462C300E15A7F /* CurrentUser.swift */; };
+		E2D607E61BF4685000E15A7F /* SelectSignUpOrLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D607E51BF4685000E15A7F /* SelectSignUpOrLogInViewController.swift */; };
+		E2D607E91BF4688000E15A7F /* SelectSignUpOrLogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D607E81BF4688000E15A7F /* SelectSignUpOrLogInView.swift */; };
+		E2D607EB1BF4689300E15A7F /* SelectSignUpOrLogInView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2D607EA1BF4689300E15A7F /* SelectSignUpOrLogInView.xib */; };
 		E2F3F5461BEDF37800F0E7B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F3F5451BEDF37800F0E7B3 /* AppDelegate.swift */; };
 		E2F3F5481BEDF37800F0E7B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F3F5471BEDF37800F0E7B3 /* ViewController.swift */; };
 		E2F3F54B1BEDF37800F0E7B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2F3F5491BEDF37800F0E7B3 /* Main.storyboard */; };
@@ -46,6 +54,14 @@
 		AF17B35C1AD22AAC7F88FF3F /* Pods-PocketGuide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketGuide.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PocketGuide/Pods-PocketGuide.debug.xcconfig"; sourceTree = "<group>"; };
 		E2026DFE1BEDF8D9000F8FBF /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		E2026DFF1BEDF8D9000F8FBF /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		E2498FC71BEE100B0027467F /* LogInModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInModel.swift; sourceTree = "<group>"; };
+		E2498FCC1BEE19A80027467F /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		E2498FCE1BEE19B90027467F /* LogInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
+		E2498FD01BEE19C70027467F /* LogInView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogInView.xib; sourceTree = "<group>"; };
+		E2D607E31BF462C300E15A7F /* CurrentUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = "<group>"; };
+		E2D607E51BF4685000E15A7F /* SelectSignUpOrLogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectSignUpOrLogInViewController.swift; sourceTree = "<group>"; };
+		E2D607E81BF4688000E15A7F /* SelectSignUpOrLogInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectSignUpOrLogInView.swift; sourceTree = "<group>"; };
+		E2D607EA1BF4689300E15A7F /* SelectSignUpOrLogInView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectSignUpOrLogInView.xib; sourceTree = "<group>"; };
 		E2F3F5421BEDF37800F0E7B3 /* PocketGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2F3F5451BEDF37800F0E7B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2F3F5471BEDF37800F0E7B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,16 +121,37 @@
 		D085153BB913B28CD8140A7F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E2026DFE1BEDF8D9000F8FBF /* Alamofire.framework */,
+				E2026DFF1BEDF8D9000F8FBF /* SwiftyJSON.framework */,
 				61097D7A896CB74DCCB851C0 /* Pods_PocketGuide.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E2498FC91BEE10880027467F /* Log in */ = {
+			isa = PBXGroup;
+			children = (
+				E2498FC71BEE100B0027467F /* LogInModel.swift */,
+				E2498FCC1BEE19A80027467F /* LogInViewController.swift */,
+				E2498FCE1BEE19B90027467F /* LogInView.swift */,
+				E2498FD01BEE19C70027467F /* LogInView.xib */,
+			);
+			name = "Log in";
+			sourceTree = "<group>";
+		};
+		E2D607E71BF4685600E15A7F /* SelectSignUpOrLogIn */ = {
+			isa = PBXGroup;
+			children = (
+				E2D607E51BF4685000E15A7F /* SelectSignUpOrLogInViewController.swift */,
+				E2D607E81BF4688000E15A7F /* SelectSignUpOrLogInView.swift */,
+				E2D607EA1BF4689300E15A7F /* SelectSignUpOrLogInView.xib */,
+			);
+			name = SelectSignUpOrLogIn;
+			sourceTree = "<group>";
+		};
 		E2F3F5391BEDF37800F0E7B3 = {
 			isa = PBXGroup;
 			children = (
-				E2026DFE1BEDF8D9000F8FBF /* Alamofire.framework */,
-				E2026DFF1BEDF8D9000F8FBF /* SwiftyJSON.framework */,
 				E2F3F5441BEDF37800F0E7B3 /* PocketGuide */,
 				E2F3F5591BEDF37800F0E7B3 /* PocketGuideTests */,
 				E2F3F5641BEDF37800F0E7B3 /* PocketGuideUITests */,
@@ -137,11 +174,13 @@
 		E2F3F5441BEDF37800F0E7B3 /* PocketGuide */ = {
 			isa = PBXGroup;
 			children = (
-				E2F3F57A1BEDF74900F0E7B3 /* Modles */,
+				E2F3F5491BEDF37800F0E7B3 /* Main.storyboard */,
+				E2F3F57A1BEDF74900F0E7B3 /* Models */,
+				E2D607E71BF4685600E15A7F /* SelectSignUpOrLogIn */,
+				E2498FC91BEE10880027467F /* Log in */,
 				E2F3F5731BEDF3D100F0E7B3 /* Sign Up */,
 				E2F3F5451BEDF37800F0E7B3 /* AppDelegate.swift */,
 				E2F3F5471BEDF37800F0E7B3 /* ViewController.swift */,
-				E2F3F5491BEDF37800F0E7B3 /* Main.storyboard */,
 				E2F3F54C1BEDF37800F0E7B3 /* Assets.xcassets */,
 				E2F3F54E1BEDF37800F0E7B3 /* LaunchScreen.storyboard */,
 				E2F3F5511BEDF37800F0E7B3 /* Info.plist */,
@@ -177,12 +216,13 @@
 			name = "Sign Up";
 			sourceTree = "<group>";
 		};
-		E2F3F57A1BEDF74900F0E7B3 /* Modles */ = {
+		E2F3F57A1BEDF74900F0E7B3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				E2F3F57B1BEDF75A00F0E7B3 /* User.swift */,
+				E2D607E31BF462C300E15A7F /* CurrentUser.swift */,
 			);
-			name = Modles;
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,7 +338,9 @@
 			files = (
 				E2F3F5791BEDF40B00F0E7B3 /* SignUpView.xib in Resources */,
 				E2F3F5501BEDF37800F0E7B3 /* LaunchScreen.storyboard in Resources */,
+				E2498FD11BEE19C70027467F /* LogInView.xib in Resources */,
 				E2F3F54D1BEDF37800F0E7B3 /* Assets.xcassets in Resources */,
+				E2D607EB1BF4689300E15A7F /* SelectSignUpOrLogInView.xib in Resources */,
 				E2F3F54B1BEDF37800F0E7B3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,8 +413,8 @@
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)//Carthage/Build/iOS/Alamofire.framework",
-				"$(SRCROOT)//Carthage/Build/iOS/SwiftyJSON.framework.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 			);
 			outputPaths = (
 			);
@@ -387,11 +429,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2498FCF1BEE19B90027467F /* LogInView.swift in Sources */,
+				E2498FCD1BEE19A80027467F /* LogInViewController.swift in Sources */,
+				E2498FC81BEE100B0027467F /* LogInModel.swift in Sources */,
 				E2F3F5771BEDF3FE00F0E7B3 /* SignUpView.swift in Sources */,
 				E2F3F5751BEDF3ED00F0E7B3 /* SignUpViewController.swift in Sources */,
 				E2F3F5481BEDF37800F0E7B3 /* ViewController.swift in Sources */,
 				E2F3F57C1BEDF75A00F0E7B3 /* User.swift in Sources */,
+				E2D607E41BF462C300E15A7F /* CurrentUser.swift in Sources */,
 				E2F3F5461BEDF37800F0E7B3 /* AppDelegate.swift in Sources */,
+				E2D607E61BF4685000E15A7F /* SelectSignUpOrLogInViewController.swift in Sources */,
+				E2D607E91BF4688000E15A7F /* SelectSignUpOrLogInView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,8 +15,8 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="76"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9z7-jM-Sha">
-                            <rect key="frame" x="17" y="23" width="46" height="30"/>
-                            <state key="normal" title="Button"/>
+                            <rect key="frame" x="25" y="23" width="30" height="30"/>
+                            <state key="normal" title="&lt;-"/>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -72,10 +72,6 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11R-nV-KWG">
-                    <rect key="frame" x="73" y="624" width="46" height="30"/>
-                    <state key="normal" title="Button"/>
-                </button>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wrh-Rl-wLp">
                     <rect key="frame" x="8" y="476" width="359" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -91,7 +87,7 @@
                 <outlet property="nameTextField" destination="FCd-dB-Au9" id="chX-5J-UYo"/>
                 <outlet property="passwordConfirmationTextField" destination="Wrh-Rl-wLp" id="BhP-FS-3S4"/>
                 <outlet property="passwordTextField" destination="Yfp-IQ-uuf" id="KPD-Lv-IdR"/>
-                <outlet property="signUpButton" destination="11R-nV-KWG" id="U3T-Ux-FRg"/>
+                <outlet property="signUpButton" destination="YhN-fA-NTM" id="AK7-dO-i3o"/>
                 <outlet property="touristButton" destination="Fhb-hx-yyg" id="bAQ-w8-EEK"/>
             </connections>
             <point key="canvasLocation" x="244.5" y="354.5"/>

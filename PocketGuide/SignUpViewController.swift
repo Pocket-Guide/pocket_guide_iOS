@@ -48,6 +48,5 @@ class SignUpViewController: UIViewController {
         let signUpView = view as! SignUpView
         let user = User(name: signUpView.nameTextField.text!, email: signUpView.emailTextField.text!
             , password: signUpView.passwordTextField.text!)
-        user.save()
     }
 }
