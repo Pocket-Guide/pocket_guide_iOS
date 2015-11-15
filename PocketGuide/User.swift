@@ -15,13 +15,15 @@ class User: NSObject {
     var name: String!
     var email: String
     var password: String
+    var passwordConfirmation: String!
     
     var oauthToken: String?
     
-    init(name: String, email: String, password: String) {
+    init(name: String, email: String, password: String, passwordConfirmation: String) {
         self.name = name
         self.email = email
         self.password = password
+        self.passwordConfirmation = passwordConfirmation
     }
     
     init(email: String, password: String){
@@ -30,9 +32,13 @@ class User: NSObject {
     }
     
     func signUp() {
-        let URL = ""
-        let parameters = ["name": name, "email": email, "password": password]
-        Alamofire.request(.POST, URL, parameters: parameters, encoding: .URL, headers: nil)
+        let URL = "http://localhost:3000/tourists"
+        let parameters = ["email": email, "password": password, "password_confirmation": passwordConfirmation, "name": name]
+        Alamofire.request(.POST, URL, parameters: parameters, encoding: .URL, headers: nil).response {
+            (request, response, data, error) in
+            let json = JSON(data: data!)
+            print(json)
+        }
     }
     
     func logIn() {

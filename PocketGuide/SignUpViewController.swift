@@ -34,7 +34,7 @@ class SignUpViewController: UIViewController {
     }
     
     func tapSignUpButton() {
-        
+        registerUser()
     }
     
     func checkInputItems() {
@@ -47,6 +47,7 @@ class SignUpViewController: UIViewController {
     func registerUser() {
         let signUpView = view as! SignUpView
         let user = User(name: signUpView.nameTextField.text!, email: signUpView.emailTextField.text!
-            , password: signUpView.passwordTextField.text!)
+            , password: signUpView.passwordTextField.text!, passwordConfirmation: signUpView.passwordConfirmationTextField.text!)
+        user.signUp()
     }
 }
