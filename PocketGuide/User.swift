@@ -18,8 +18,8 @@ class User: NSObject {
     var passwordConfirmation: String!
     var oauthToken: String?
     var scopes: String?
-    let ApplicationId = "e733415535f1b8801bec084f0bfbf0081afd01f4aed18d96ac2c0b49beac57ac"
-    let secretID = "6b55f0886c2772aa4ab54f97d37cca90a1a273109c73836ffa291d82fc7ca42a"
+    let ApplicationId = "f36208b605656466b487d3c24f6ee9c501dc6bf78df4857061337aca4886be83"
+    let secretID = "8ee53f3f13e585b52f62c72550fbc23adb6f61469e24f1688fa838b9b9c7b1cc"
     let getTokenURL = "http://localhost:3000/oauth/token.json"
     
     init(name: String, email: String, password: String, passwordConfirmation: String) {
@@ -36,6 +36,7 @@ class User: NSObject {
     
     func signUp(URL: String) {
         let parameters = ["email": email, "password": password, "password_confirmation": passwordConfirmation, "name": name, "scopes": checkScopes(URL)]
+        print(parameters)
         Alamofire.request(.POST, URL, parameters: parameters, encoding: .URL, headers: nil).response {
             (request, response, data, error) in
             if error == nil {
@@ -49,6 +50,7 @@ class User: NSObject {
         Alamofire.request(.POST, getTokenURL, parameters: parameters).response {
             (request, response, data, error) in
             let json = JSON(data: data!)
+            print(json)
             if let token = json["access_token"].string {
                 print(token)
                 self.oauthToken = token
@@ -66,9 +68,9 @@ class User: NSObject {
     
     func checkScopes(URL: String) -> String {
         if URL.rangeOfString("tourists") != nil {
-           return "tourists"
+           return "tourist"
         } else {
-           return "guides"
+           return "guide"
         }
     }
     
