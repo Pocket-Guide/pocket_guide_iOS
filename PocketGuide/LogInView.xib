@@ -46,7 +46,7 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="aaaaa" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lyE-Dr-L8P">
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="aaaaaaaa" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lyE-Dr-L8P">
                     <rect key="frame" x="8" y="401" width="359" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
@@ -61,8 +61,10 @@
             <connections>
                 <outlet property="backButton" destination="hyg-vH-jAi" id="B8g-en-f2M"/>
                 <outlet property="emailTextField" destination="ziR-ry-PAy" id="T7Q-JE-GL0"/>
+                <outlet property="guideButton" destination="0Yd-vR-1ww" id="AsU-9f-wfx"/>
                 <outlet property="logInButton" destination="ZTT-DL-jvf" id="3Ea-99-mtA"/>
                 <outlet property="passwordTextField" destination="lyE-Dr-L8P" id="hJh-bM-vo4"/>
+                <outlet property="touristButton" destination="q9g-bi-2Yw" id="rRo-Vk-HSo"/>
             </connections>
             <point key="canvasLocation" x="244.5" y="354.5"/>
         </view>

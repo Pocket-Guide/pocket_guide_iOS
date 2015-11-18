@@ -9,6 +9,7 @@
 import UIKit
 
 class SignUpViewController: UIViewController {
+    var URL = "http://localhost:3000/tourists"
 
     override func loadView() {
         super.loadView()
@@ -17,11 +18,12 @@ class SignUpViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(URL)
         let signUpView = view as! SignUpView
         signUpView.backButton.addTarget(self, action: "goBackChooseSignUpOrLogInViewController", forControlEvents: .TouchUpInside)
         signUpView.signUpButton.addTarget(self, action: "tapSignUpButton", forControlEvents: .TouchUpInside)
-        
-        // Do any additional setup after loading the view.
+        signUpView.guideButton.addTarget(self, action: "tapGuideButton", forControlEvents: .TouchUpInside)
+        signUpView.touristButton.addTarget(self, action: "tapTouristButton", forControlEvents: .TouchUpInside)
     }
     
     override func didReceiveMemoryWarning() {
@@ -37,6 +39,16 @@ class SignUpViewController: UIViewController {
         registerUser()
     }
     
+    func tapGuideButton() {
+        URL = "http://localhost:3000/guides"
+        print(URL)
+    }
+    
+    func tapTouristButton() {
+        URL = "http://localhost:3000/tourists"
+        print(URL)
+    }
+    
     func checkInputItems() {
         let signUpView = view as! SignUpView
         if signUpView.nameTextField.text?.isEmpty != nil && signUpView.passwordTextField.text == signUpView.passwordConfirmationTextField.text{
@@ -48,6 +60,6 @@ class SignUpViewController: UIViewController {
         let signUpView = view as! SignUpView
         let user = User(name: signUpView.nameTextField.text!, email: signUpView.emailTextField.text!
             , password: signUpView.passwordTextField.text!, passwordConfirmation: signUpView.passwordConfirmationTextField.text!)
-        user.signUp()
+        user.signUp(URL)
     }
 }

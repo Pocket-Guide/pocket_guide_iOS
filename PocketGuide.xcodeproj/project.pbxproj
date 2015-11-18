@@ -10,7 +10,6 @@
 		8A6F7F313D35E9E780E973E8 /* Pods_PocketGuide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61097D7A896CB74DCCB851C0 /* Pods_PocketGuide.framework */; };
 		E2026E001BEDF8D9000F8FBF /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2026DFE1BEDF8D9000F8FBF /* Alamofire.framework */; };
 		E2026E011BEDF8D9000F8FBF /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2026DFF1BEDF8D9000F8FBF /* SwiftyJSON.framework */; };
-		E2498FC81BEE100B0027467F /* LogInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2498FC71BEE100B0027467F /* LogInModel.swift */; };
 		E2498FCD1BEE19A80027467F /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2498FCC1BEE19A80027467F /* LogInViewController.swift */; };
 		E2498FCF1BEE19B90027467F /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2498FCE1BEE19B90027467F /* LogInView.swift */; };
 		E2498FD11BEE19C70027467F /* LogInView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2498FD01BEE19C70027467F /* LogInView.xib */; };
@@ -54,7 +53,6 @@
 		AF17B35C1AD22AAC7F88FF3F /* Pods-PocketGuide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketGuide.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PocketGuide/Pods-PocketGuide.debug.xcconfig"; sourceTree = "<group>"; };
 		E2026DFE1BEDF8D9000F8FBF /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		E2026DFF1BEDF8D9000F8FBF /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
-		E2498FC71BEE100B0027467F /* LogInModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInModel.swift; sourceTree = "<group>"; };
 		E2498FCC1BEE19A80027467F /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		E2498FCE1BEE19B90027467F /* LogInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		E2498FD01BEE19C70027467F /* LogInView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogInView.xib; sourceTree = "<group>"; };
@@ -131,7 +129,6 @@
 		E2498FC91BEE10880027467F /* Log in */ = {
 			isa = PBXGroup;
 			children = (
-				E2498FC71BEE100B0027467F /* LogInModel.swift */,
 				E2498FCC1BEE19A80027467F /* LogInViewController.swift */,
 				E2498FCE1BEE19B90027467F /* LogInView.swift */,
 				E2498FD01BEE19C70027467F /* LogInView.xib */,
@@ -431,7 +428,6 @@
 			files = (
 				E2498FCF1BEE19B90027467F /* LogInView.swift in Sources */,
 				E2498FCD1BEE19A80027467F /* LogInViewController.swift in Sources */,
-				E2498FC81BEE100B0027467F /* LogInModel.swift in Sources */,
 				E2F3F5771BEDF3FE00F0E7B3 /* SignUpView.swift in Sources */,
 				E2F3F5751BEDF3ED00F0E7B3 /* SignUpViewController.swift in Sources */,
 				E2F3F5481BEDF37800F0E7B3 /* ViewController.swift in Sources */,

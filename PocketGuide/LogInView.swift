@@ -14,6 +14,8 @@ class LogInView: UIView {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var logInButton: UIButton!
+    @IBOutlet weak var touristButton: UIButton!
+    @IBOutlet weak var guideButton: UIButton!
     
     override func layoutSubviews() {
         super.layoutSubviews()

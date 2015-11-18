@@ -9,6 +9,7 @@
 import UIKit
 
 class LogInViewController: UIViewController {
+    var URL = "http://localhost:3000/tourists"
     override func loadView() {
         super.loadView()
         let nib = UINib(nibName: "LogInView", bundle: nil)
@@ -16,9 +17,12 @@ class LogInViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(URL)
         let logInView = view as! LogInView
         logInView.backButton.addTarget(self, action: "goBackChooseSignUpOrLogInViewController", forControlEvents: .TouchUpInside)
         logInView.logInButton.addTarget(self, action: "tapLogInButton", forControlEvents: .TouchUpInside)
+        logInView.guideButton.addTarget(self, action: "tapGuideButton", forControlEvents: .TouchUpInside)
+        logInView.touristButton.addTarget(self, action: "tapTouristButton", forControlEvents: .TouchUpInside)
     }
     
     override func didReceiveMemoryWarning() {
@@ -28,6 +32,16 @@ class LogInViewController: UIViewController {
     
     func goBackChooseSignUpOrLogInViewController() {
         dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func tapGuideButton() {
+        URL = "http://localhost:3000/guides"
+        print(URL)
+    }
+    
+    func tapTouristButton() {
+        URL = "http://localhost:3000/tourists"
+        print(URL)
     }
     
     func tapLogInButton() {
@@ -44,6 +58,6 @@ class LogInViewController: UIViewController {
     func logInUser() {
         let logInView = view as! LogInView
         let user = User(email: logInView.emailTextField.text!, password: logInView.passwordTextField.text!)
-        user.logIn()
+        user.logIn(URL)
     }
 }
