@@ -17,6 +17,7 @@ class User: NSObject {
     var password: String
     var passwordConfirmation: String!
     var oauthToken: String?
+    var scopes: String?
     let ApplicationId = "e733415535f1b8801bec084f0bfbf0081afd01f4aed18d96ac2c0b49beac57ac"
     let secretID = "6b55f0886c2772aa4ab54f97d37cca90a1a273109c73836ffa291d82fc7ca42a"
     let getTokenURL = "http://localhost:3000/oauth/token.json"
@@ -34,43 +35,44 @@ class User: NSObject {
     }
     
     func signUp(URL: String) {
-        let parameters = ["email": email, "password": password, "password_confirmation": passwordConfirmation, "name": name]
+        let parameters = ["email": email, "password": password, "password_confirmation": passwordConfirmation, "name": name, "scopes": checkScopes(URL)]
         Alamofire.request(.POST, URL, parameters: parameters, encoding: .URL, headers: nil).response {
             (request, response, data, error) in
-            let json = JSON(data: data!)
-            print("===============UserDate=====================")
-            print(json)
-            let parameters = ["grant_type": "password", "client_id": self.ApplicationId, "client_secret": self.secretID, "email": self.email]
-            Alamofire.request(.POST, self.getTokenURL, parameters: parameters).response {
-                (request, response, data, error) in
-                let json = JSON(data: data!)
-                print("====================Token=================")
-                print(json)
+            if error == nil {
+                self.logIn(URL)
             }
         }
     }
     
     func logIn(URL: String) {
-        let parameters = ["grant_type": "password", "client_id": ApplicationId, "client_secret": secretID, "email": email]
+        let parameters = ["grant_type": "password", "client_id": ApplicationId, "client_secret": secretID, "email": email, "scopes": checkScopes(URL)]
         Alamofire.request(.POST, getTokenURL, parameters: parameters).response {
             (request, response, data, error) in
             let json = JSON(data: data!)
-            print(json)
-            let token = json["access_token"].string
-            if let oauthToken = token {
-                self.oauthToken = oauthToken
-                let parameter = ["Authorization": oauthToken]
+            if let token = json["access_token"].string {
+                print(token)
+                self.oauthToken = token
+                let parameter = ["Authorization": token]
                 Alamofire.request(.GET, URL, parameters: parameter).response {
                     (request, response, data, error) in
                     let json = JSON(data: data!)
                     print("===============UserData===================")
                     print(json)
+//                    self.saveOauthToken(token)
                 }
             }
         }
     }
     
-    func saveOauthToken() {
+    func checkScopes(URL: String) -> String {
+        if URL.rangeOfString("tourists") != nil {
+           return "tourists"
+        } else {
+           return "guides"
+        }
+    }
+    
+    func saveOauthToken(token: String) {
         let userDefaults = NSUserDefaults.standardUserDefaults()
         userDefaults.setObject(oauthToken, forKey: "oauthToken")
         userDefaults.synchronize()
