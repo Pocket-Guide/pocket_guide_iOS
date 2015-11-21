@@ -13,6 +13,10 @@
 		E2498FCD1BEE19A80027467F /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2498FCC1BEE19A80027467F /* LogInViewController.swift */; };
 		E2498FCF1BEE19B90027467F /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2498FCE1BEE19B90027467F /* LogInView.swift */; };
 		E2498FD11BEE19C70027467F /* LogInView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2498FD01BEE19C70027467F /* LogInView.xib */; };
+		E2706EB21C004A05007D75EF /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2706EB11C004A05007D75EF /* Question.swift */; };
+		E2706EB41C004A22007D75EF /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2706EB31C004A22007D75EF /* QuestionViewController.swift */; };
+		E2706EB61C004B4A007D75EF /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2706EB51C004B4A007D75EF /* QuestionView.swift */; };
+		E2706EB81C004B5B007D75EF /* Question.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2706EB71C004B5B007D75EF /* Question.xib */; };
 		E2D607E41BF462C300E15A7F /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D607E31BF462C300E15A7F /* CurrentUser.swift */; };
 		E2D607E61BF4685000E15A7F /* SelectSignUpOrLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D607E51BF4685000E15A7F /* SelectSignUpOrLogInViewController.swift */; };
 		E2D607E91BF4688000E15A7F /* SelectSignUpOrLogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D607E81BF4688000E15A7F /* SelectSignUpOrLogInView.swift */; };
@@ -56,6 +60,10 @@
 		E2498FCC1BEE19A80027467F /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		E2498FCE1BEE19B90027467F /* LogInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		E2498FD01BEE19C70027467F /* LogInView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogInView.xib; sourceTree = "<group>"; };
+		E2706EB11C004A05007D75EF /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		E2706EB31C004A22007D75EF /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		E2706EB51C004B4A007D75EF /* QuestionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		E2706EB71C004B5B007D75EF /* Question.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Question.xib; sourceTree = "<group>"; };
 		E2D607E31BF462C300E15A7F /* CurrentUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = "<group>"; };
 		E2D607E51BF4685000E15A7F /* SelectSignUpOrLogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectSignUpOrLogInViewController.swift; sourceTree = "<group>"; };
 		E2D607E81BF4688000E15A7F /* SelectSignUpOrLogInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectSignUpOrLogInView.swift; sourceTree = "<group>"; };
@@ -136,6 +144,16 @@
 			name = "Log in";
 			sourceTree = "<group>";
 		};
+		E2A948F71BFC61DA00986257 /* Question */ = {
+			isa = PBXGroup;
+			children = (
+				E2706EB31C004A22007D75EF /* QuestionViewController.swift */,
+				E2706EB51C004B4A007D75EF /* QuestionView.swift */,
+				E2706EB71C004B5B007D75EF /* Question.xib */,
+			);
+			name = Question;
+			sourceTree = "<group>";
+		};
 		E2D607E71BF4685600E15A7F /* SelectSignUpOrLogIn */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,8 +189,9 @@
 		E2F3F5441BEDF37800F0E7B3 /* PocketGuide */ = {
 			isa = PBXGroup;
 			children = (
-				E2F3F5491BEDF37800F0E7B3 /* Main.storyboard */,
 				E2F3F57A1BEDF74900F0E7B3 /* Models */,
+				E2F3F5491BEDF37800F0E7B3 /* Main.storyboard */,
+				E2A948F71BFC61DA00986257 /* Question */,
 				E2D607E71BF4685600E15A7F /* SelectSignUpOrLogIn */,
 				E2498FC91BEE10880027467F /* Log in */,
 				E2F3F5731BEDF3D100F0E7B3 /* Sign Up */,
@@ -218,6 +237,7 @@
 			children = (
 				E2F3F57B1BEDF75A00F0E7B3 /* User.swift */,
 				E2D607E31BF462C300E15A7F /* CurrentUser.swift */,
+				E2706EB11C004A05007D75EF /* Question.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -333,6 +353,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2706EB81C004B5B007D75EF /* Question.xib in Resources */,
 				E2F3F5791BEDF40B00F0E7B3 /* SignUpView.xib in Resources */,
 				E2F3F5501BEDF37800F0E7B3 /* LaunchScreen.storyboard in Resources */,
 				E2498FD11BEE19C70027467F /* LogInView.xib in Resources */,
@@ -428,13 +449,16 @@
 			files = (
 				E2498FCF1BEE19B90027467F /* LogInView.swift in Sources */,
 				E2498FCD1BEE19A80027467F /* LogInViewController.swift in Sources */,
+				E2706EB41C004A22007D75EF /* QuestionViewController.swift in Sources */,
 				E2F3F5771BEDF3FE00F0E7B3 /* SignUpView.swift in Sources */,
 				E2F3F5751BEDF3ED00F0E7B3 /* SignUpViewController.swift in Sources */,
 				E2F3F5481BEDF37800F0E7B3 /* ViewController.swift in Sources */,
+				E2706EB61C004B4A007D75EF /* QuestionView.swift in Sources */,
 				E2F3F57C1BEDF75A00F0E7B3 /* User.swift in Sources */,
 				E2D607E41BF462C300E15A7F /* CurrentUser.swift in Sources */,
 				E2F3F5461BEDF37800F0E7B3 /* AppDelegate.swift in Sources */,
 				E2D607E61BF4685000E15A7F /* SelectSignUpOrLogInViewController.swift in Sources */,
+				E2706EB21C004A05007D75EF /* Question.swift in Sources */,
 				E2D607E91BF4688000E15A7F /* SelectSignUpOrLogInView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
