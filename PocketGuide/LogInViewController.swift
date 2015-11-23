@@ -9,7 +9,7 @@
 import UIKit
 
 class LogInViewController: UIViewController {
-    var URL = "http://localhost:3000/tourists"
+    var URL = "http://localhost:3000/current_tourist/me"
     override func loadView() {
         super.loadView()
         let nib = UINib(nibName: "LogInView", bundle: nil)
