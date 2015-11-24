@@ -18,8 +18,8 @@ class User: NSObject {
     var passwordConfirmation: String!
     var oauthToken: String?
     var scopes: String?
-    let ApplicationId = "d599af3c9835d4a62faf2813788f7c4f6cf2d0b7807a0e8c68f60be5b23b8d3f"
-    let secretID = "b2c77abc89556f1923457b1f2139f4718c46237fd39e60444ef2c1f2be29030a"
+    let ApplicationId = "f36208b605656466b487d3c24f6ee9c501dc6bf78df4857061337aca4886be83"
+    let secretID = "8ee53f3f13e585b52f62c72550fbc23adb6f61469e24f1688fa838b9b9c7b1cc"
     let getTokenURL = "http://localhost:3000/oauth/token.json"
     
     init(name: String, email: String, password: String, passwordConfirmation: String) {
@@ -53,6 +53,7 @@ class User: NSObject {
         Alamofire.request(.POST, getTokenURL, parameters: parameters).response {
             (request, response, data, error) in
             let json = JSON(data: data!)
+            print(json)
             if let token = json["access_token"].string {
                 print("=================token=========")
                 print(token)
@@ -71,7 +72,11 @@ class User: NSObject {
     }
     
     func checkScopes(URL: String) -> String {
-return "tourist"
+        if URL.rangeOfString("tourists") != nil {
+           return "tourist"
+        } else {
+           return "guide"
+        }
     }
     
     func saveOauthToken(token: String) {
