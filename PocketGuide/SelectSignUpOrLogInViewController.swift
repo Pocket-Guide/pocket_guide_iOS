@@ -22,7 +22,7 @@ class SelectSignUpOrLogInViewController: UIViewController {
         selectSignUpOrLogInView.logInButton.addTarget( self, action: "tapLogInButton", forControlEvents: .TouchUpInside)
         selectSignUpOrLogInView.signUpButton.addTarget(self, action: "tapSignUpButton", forControlEvents: .TouchUpInside)
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

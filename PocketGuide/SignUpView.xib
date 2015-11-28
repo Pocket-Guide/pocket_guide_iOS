@@ -11,16 +11,6 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PB0-Eu-8x2">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="76"/>
-                    <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9z7-jM-Sha">
-                            <rect key="frame" x="25" y="23" width="30" height="30"/>
-                            <state key="normal" title="&lt;-"/>
-                        </button>
-                    </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                </view>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fhb-hx-yyg">
                     <rect key="frame" x="51" y="184" width="48" height="30"/>
                     <state key="normal" title="Tourist"/>
@@ -81,7 +71,6 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <connections>
-                <outlet property="backButton" destination="9z7-jM-Sha" id="I5L-nk-m4I"/>
                 <outlet property="emailTextField" destination="3OF-rf-5bh" id="8WL-8F-XaP"/>
                 <outlet property="guideButton" destination="MWM-wB-tbh" id="13P-VC-qiX"/>
                 <outlet property="nameTextField" destination="FCd-dB-Au9" id="chX-5J-UYo"/>

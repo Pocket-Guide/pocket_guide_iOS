@@ -16,16 +16,21 @@ class QuestionViewController: UIViewController {
         super.viewDidLoad()
         
         checkbox(100, text: "11111111111111", tag: 0)
-        checkbox(132, text: "22222222222222", tag: 1)
-        checkbox(164, text: "33333333333333", tag: 2)
-        checkbox(196, text: "44444444444444", tag: 3)
+        checkbox(200, text: "22222222222222", tag: 1)
+        checkbox(300, text: "33333333333333", tag: 2)
+        checkbox(400, text: "44444444444444", tag: 3)
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Next", style: .Plain, target: self, action: "tapNextButton")
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Close", style: .Plain, target: self, action: "tapCloseButton")
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
     func checkbox(y: CGFloat, text: String, tag: Int) {
         let checkbox = CTCheckbox()
@@ -48,5 +53,15 @@ class QuestionViewController: UIViewController {
             }
         }
     }
-
+    
+    func tapNextButton() {
+        for chckbox in checkboxes {
+            chckbox.checked = false
+        }
+        print("次の質問でござる")
+    }
+    
+    func tapCloseButton() {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 }
