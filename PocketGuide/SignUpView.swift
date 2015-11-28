@@ -9,8 +9,6 @@
 import UIKit
 
 class SignUpView: UIView {
-    
-    @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var touristButton: UIButton!
     @IBOutlet weak var guideButton: UIButton!
     @IBOutlet weak var nameTextField: UITextField!

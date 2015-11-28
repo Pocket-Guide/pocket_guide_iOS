@@ -15,11 +15,15 @@ class LogInViewController: UIViewController {
         let nib = UINib(nibName: "LogInView", bundle: nil)
         view = nib.instantiateWithOwner(nil, options: nil).first as! UIView
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "<-", style: .Plain, target: self, action: "tapGoBackButton")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         print(URL)
         let logInView = view as! LogInView
-        logInView.backButton.addTarget(self, action: "goBackChooseSignUpOrLogInViewController", forControlEvents: .TouchUpInside)
         logInView.logInButton.addTarget(self, action: "tapLogInButton", forControlEvents: .TouchUpInside)
         logInView.guideButton.addTarget(self, action: "tapGuideButton", forControlEvents: .TouchUpInside)
         logInView.touristButton.addTarget(self, action: "tapTouristButton", forControlEvents: .TouchUpInside)
@@ -30,18 +34,16 @@ class LogInViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func goBackChooseSignUpOrLogInViewController() {
+    func tapGoBackButton() {
         dismissViewControllerAnimated(true, completion: nil)
     }
     
     func tapGuideButton() {
-        URL = "http://localhost:3000/guides"
-        print(URL)
+        URL = "http://localhot:3000/current_guide/me"
     }
     
     func tapTouristButton() {
-        URL = "http://localhost:3000/tourists"
-        print(URL)
+        URL = "http://localhost:3000/current_tourist/me"
     }
     
     func tapLogInButton() {

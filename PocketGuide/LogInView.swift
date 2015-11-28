@@ -9,8 +9,6 @@
 import UIKit
 
 class LogInView: UIView {
-
-    @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var logInButton: UIButton!
