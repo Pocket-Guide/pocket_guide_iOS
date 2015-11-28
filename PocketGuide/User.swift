@@ -55,23 +55,24 @@ class User: NSObject {
                 print(token)
                 self.oauthToken = token
                 let parameter = ["Authorization": token]
-                Alamofire.request(.GET, URL, parameters: parameter).response {
+                Alamofire.request(.GET, "http://localhost:3000/current_tourist/me", parameters: parameter).response {
                     (request, response, data, error) in
                     let json = JSON(data: data!)
                     print("===============UserData===================")
                     print(json)
-//                    self.saveOauthToken(token)
+                    self.saveOauthToken(token)
                 }
             }
         }
     }
     
     func checkScopes(URL: String) -> String {
-        if URL.rangeOfString("tourists") != nil {
-           return "tourist"
-        } else {
-           return "guide"
-        }
+        return "tourist"
+//        if URL.rangeOfString("tourists") != nil {
+//           return "tourist"
+//        } else {
+//           return "guide"
+//        }
     }
     
     func saveOauthToken(token: String) {
