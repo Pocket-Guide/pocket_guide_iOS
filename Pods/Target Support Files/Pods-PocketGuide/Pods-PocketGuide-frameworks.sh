@@ -86,10 +86,12 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-PocketGuide/Alamofire.framework"
   install_framework "Pods-PocketGuide/AlamofireOauth2.framework"
+  install_framework "Pods-PocketGuide/CTCheckbox.framework"
   install_framework "Pods-PocketGuide/KeychainAccess.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-PocketGuide/Alamofire.framework"
   install_framework "Pods-PocketGuide/AlamofireOauth2.framework"
+  install_framework "Pods-PocketGuide/CTCheckbox.framework"
   install_framework "Pods-PocketGuide/KeychainAccess.framework"
 fi

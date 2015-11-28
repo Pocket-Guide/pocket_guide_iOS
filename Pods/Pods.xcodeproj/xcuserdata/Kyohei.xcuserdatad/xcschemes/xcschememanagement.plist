@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>CTCheckbox.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>KeychainAccess.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,17 +37,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>184EF2A2F5CC892507D36C6F5A715919</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>432ECC54282C84882B482CCB4CF227FC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>ACF9C4B226D429DCD63F799792CB323D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>D6AF3913522D8407051F9229A3D35189</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FD5C75540B55C74BD8C1E28DDAB7547E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

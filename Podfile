@@ -5,6 +5,7 @@ use_frameworks!
 
 target 'PocketGuide' do
 pod "AlamofireOauth2"
+pod 'CTCheckbox', '~> 0.0.5'
 end
 
 target 'PocketGuideTests' do

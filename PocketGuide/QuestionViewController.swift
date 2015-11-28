@@ -7,13 +7,18 @@
 //
 
 import UIKit
+import CTCheckbox
 
 class QuestionViewController: UIViewController {
+    var checkboxes = [CTCheckbox]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        checkbox(100, text: "11111111111111", tag: 0)
+        checkbox(132, text: "22222222222222", tag: 1)
+        checkbox(164, text: "33333333333333", tag: 2)
+        checkbox(196, text: "44444444444444", tag: 3)
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,14 +27,26 @@ class QuestionViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func checkbox(y: CGFloat, text: String, tag: Int) {
+        let checkbox = CTCheckbox()
+        checkbox.frame = CGRectMake(16, y, 22, 22)
+        checkbox.checkboxColor = UIColor.blackColor()
+        checkbox.checkboxSideLength = 20
+        checkbox.textLabel.text = text
+        checkbox.addTarget(self, action: "checked:", forControlEvents: .TouchUpInside)
+        checkbox.tag = tag
+        view.addSubview(checkbox)
+        checkboxes.append(checkbox)
     }
-    */
+    
+    func checked (sender: CTCheckbox) {
+        for var i = 0; i < checkboxes.count; i++ {
+            if sender.tag == i {
+                checkboxes[i].checked = true
+            } else {
+                checkboxes[i].checked = false
+            }
+        }
+    }
 
 }
