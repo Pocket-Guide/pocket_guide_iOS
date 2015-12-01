@@ -34,9 +34,8 @@ class QuestionViewController: UIViewController {
 
     func checkbox(y: CGFloat, text: String, tag: Int) {
         let checkbox = CTCheckbox()
-        checkbox.frame = CGRectMake(16, y, 22, 22)
+        checkbox.frame = CGRectMake(16, y, 40, 40)
         checkbox.checkboxColor = UIColor.blackColor()
-        checkbox.checkboxSideLength = 20
         checkbox.textLabel.text = text
         checkbox.addTarget(self, action: "checked:", forControlEvents: .TouchUpInside)
         checkbox.tag = tag

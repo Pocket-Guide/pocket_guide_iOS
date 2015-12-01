@@ -29,5 +29,6 @@ class PlansViewVontrollerViewController: UIViewController {
     
     func moveToQuestionViewController() {
         performSegueWithIdentifier("ModalQuestionViewController", sender: nil)
+        Question.getQuestions()
     }
 }
