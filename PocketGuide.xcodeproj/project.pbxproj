@@ -24,6 +24,7 @@
 		E2D607E61BF4685000E15A7F /* SelectSignUpOrLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D607E51BF4685000E15A7F /* SelectSignUpOrLogInViewController.swift */; };
 		E2D607E91BF4688000E15A7F /* SelectSignUpOrLogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D607E81BF4688000E15A7F /* SelectSignUpOrLogInView.swift */; };
 		E2D607EB1BF4689300E15A7F /* SelectSignUpOrLogInView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2D607EA1BF4689300E15A7F /* SelectSignUpOrLogInView.xib */; };
+		E2E3CB211C1010E0004FFF3B /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E3CB201C1010E0004FFF3B /* Answer.swift */; };
 		E2F3F5461BEDF37800F0E7B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F3F5451BEDF37800F0E7B3 /* AppDelegate.swift */; };
 		E2F3F54B1BEDF37800F0E7B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2F3F5491BEDF37800F0E7B3 /* Main.storyboard */; };
 		E2F3F54D1BEDF37800F0E7B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2F3F54C1BEDF37800F0E7B3 /* Assets.xcassets */; };
@@ -74,6 +75,7 @@
 		E2D607E51BF4685000E15A7F /* SelectSignUpOrLogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectSignUpOrLogInViewController.swift; sourceTree = "<group>"; };
 		E2D607E81BF4688000E15A7F /* SelectSignUpOrLogInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectSignUpOrLogInView.swift; sourceTree = "<group>"; };
 		E2D607EA1BF4689300E15A7F /* SelectSignUpOrLogInView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectSignUpOrLogInView.xib; sourceTree = "<group>"; };
+		E2E3CB201C1010E0004FFF3B /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		E2F3F5421BEDF37800F0E7B3 /* PocketGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2F3F5451BEDF37800F0E7B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2F3F54A1BEDF37800F0E7B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -254,6 +256,7 @@
 				E2F3F57B1BEDF75A00F0E7B3 /* User.swift */,
 				E2D607E31BF462C300E15A7F /* CurrentUser.swift */,
 				E2706EB11C004A05007D75EF /* Question.swift */,
+				E2E3CB201C1010E0004FFF3B /* Answer.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -476,6 +479,7 @@
 				E2AEDDE01C098B8F0002F90D /* PlansView.swift in Sources */,
 				E2F3F5461BEDF37800F0E7B3 /* AppDelegate.swift in Sources */,
 				E2D607E61BF4685000E15A7F /* SelectSignUpOrLogInViewController.swift in Sources */,
+				E2E3CB211C1010E0004FFF3B /* Answer.swift in Sources */,
 				E2706EB21C004A05007D75EF /* Question.swift in Sources */,
 				E2D607E91BF4688000E15A7F /* SelectSignUpOrLogInView.swift in Sources */,
 			);

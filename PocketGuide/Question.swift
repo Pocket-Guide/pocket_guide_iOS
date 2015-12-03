@@ -11,24 +11,17 @@ import Alamofire
 import SwiftyJSON
 
 class Question: NSObject {
-    class func getQuestions() {
-        _ = []
+    static let sharedQuestions = Question()
+    var questions = [JSON]()
+    
+    func getQuestions(callback: () -> Void) {
         let URL = "http://localhost:3000/current_tourist/me/questions.json"
         Alamofire.request(.GET, URL).response {
             (request, response, data, error) in
             if error == nil {
-                print("============request==============")
-                print(request)
-                
-                print("=============resoponse=============")
-                print(response)
-                
-                print("============data==============")
-                print(data)
-                
                 let json = JSON(data: data!)
-                print(json)
-                
+                self.questions = json.array!
+                callback()
             } else {
                 print(error)
             }
