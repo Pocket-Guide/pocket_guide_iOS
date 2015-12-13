@@ -19,12 +19,18 @@ class Question: NSObject {
         Alamofire.request(.GET, URL).response {
             (request, response, data, error) in
             if error == nil {
+//                let json = JSON(data: data!)
+//                self.questions = json.array!
+                print(request)
+                print(response)
+                print(data)
                 let json = JSON(data: data!)
-                self.questions = json.array!
+                print(json)
                 callback()
-            } else {
-                print(error)
             }
+//            } else {
+//                print(error)
+//            }
         }
     }
 }

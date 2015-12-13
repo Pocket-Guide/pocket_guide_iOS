@@ -16,16 +16,22 @@ class QuestionViewController: UIViewController {
     
     var countQuestion = 0
     var checkboxFrameX:CGFloat = 100
+    let tour = Tour.sharedTour
+    
+    let answer = [String: AnyObject]()
+    var questionID: Int?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         question.getQuestions { () -> Void in
-            let currentQuestion = self.question.questions[self.countQuestion]
-            self.setQuestionLabel(currentQuestion["content"].string!)
-            for (index, choice) in currentQuestion["choices"].enumerate() {
-                self.checkbox(self.checkboxFrameX, text: choice.1["content"].string!, tag: index)
-                self.checkboxFrameX += 50
-            }
+//            let currentQuestion = self.question.questions[self.countQuestion]
+//            self.questionID = self.question.questions[self.countQuestion]["question_id"].int
+//            print(self.questionID)
+//            self.setQuestionLabel(currentQuestion["content"].string!)
+//            for (index, choice) in currentQuestion["choices"].enumerate() {
+//                self.checkbox(self.checkboxFrameX, text: choice.1["content"].string!, tag: index)
+//                self.checkboxFrameX += 50
+//            }
         }
         checkboxFrameX = 100
     }
@@ -33,7 +39,7 @@ class QuestionViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Next", style: .Plain, target: self, action: "tapNextButton")
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Close", style: .Plain, target: self, action: "tapCloseButton")
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .Plain, target: self, action: "tapBackButton")
     }
 
     override func didReceiveMemoryWarning() {
@@ -59,34 +65,36 @@ class QuestionViewController: UIViewController {
         view.addSubview(checkbox)
     }
     
+    //チェックボックスがタップされた時
     func checked (sender: CTCheckbox) {
         for checkbox in checkboxes {
             checkbox.checked = false
         }
         sender.checked = true
+        
     }
     
+    //Nextボタンが押された時
     func tapNextButton() {
         countQuestion += 1
         if countQuestion == question.questions.count - 1 {
             navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Post", style: .Plain, target: self, action: "tapPostButton")
         }
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .Plain, target: self, action: "tapBackButton")
         updateView()
     }
     
-    func tapCloseButton() {
-        dismissViewControllerAnimated(true, completion: nil)
-    }
-    
+    //Backボタンが押された時
     func tapBackButton() {
-        if countQuestion == 1 {
-            navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Close", style: .Plain, target: self, action: "tapCloseButton")
+        if countQuestion == 0 {
+            print(countQuestion)
+            navigationController?.popToRootViewControllerAnimated(true)
+        } else {
+            countQuestion -= 1
+            updateView()
         }
-        countQuestion -= 1
-        updateView()
     }
     
+    //画面を更新するメソッド
     func updateView() {
         for subview in view.subviews {
             subview.removeFromSuperview()
@@ -95,9 +103,8 @@ class QuestionViewController: UIViewController {
         viewDidLoad()
     }
     
-//    func clearCheckBox() {
-//        for chckbox in checkboxes {
-//            chckbox.checked = false
-//        }
-//    }
+    func tapPostButton() {
+        
+    }
+    
 }

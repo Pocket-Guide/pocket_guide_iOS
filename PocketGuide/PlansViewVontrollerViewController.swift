@@ -12,7 +12,8 @@ class PlansViewVontrollerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        if User.checkOauthToken() {
+        let currentUser = CurrentUser()
+        if currentUser.checkOauthToken() {
             performSegueWithIdentifier("ModalSelectSignUpOrLogIn", sender: nil)
         }
     }
@@ -28,6 +29,6 @@ class PlansViewVontrollerViewController: UIViewController {
     }
     
     func moveToQuestionViewController() {
-        performSegueWithIdentifier("ModalQuestionViewController", sender: nil)
+        performSegueWithIdentifier("ModalTourViewController", sender: nil)
     }
 }

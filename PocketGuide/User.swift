@@ -16,9 +16,8 @@ class User: NSObject {
     var email: String
     var password: String
     var passwordConfirmation: String!
+    var id: Int?
     var scopes: String?
-    
-    var currentUser = CurrentUser.sharedCurrentUser
     
     let ApplicationId = "f36208b605656466b487d3c24f6ee9c501dc6bf78df4857061337aca4886be83"
     let secretID = "8ee53f3f13e585b52f62c72550fbc23adb6f61469e24f1688fa838b9b9c7b1cc"
@@ -37,15 +36,12 @@ class User: NSObject {
     }
     
     func signUp(signUpURL: String, loginURL: String) {
-        let parameters = ["email": email, "password": password, "password_confirmation": passwordConfirmation, "name": name, "scope": checkScopes(signUpURL)]
+        scopes = checkScopes(signUpURL)
+        let parameters = ["email": email, "password": password, "password_confirmation": passwordConfirmation, "name": name, "scope": scopes]
         Alamofire.request(.POST, signUpURL, parameters: parameters, encoding: .URL, headers: nil).response {
             (request, response, data, error) in
             if error == nil {
                 self.logIn(loginURL)
-//                self.logIn("http://localhost:3000/current_tourist/me")
-//                ここを touristならhtp://localhost:3000/current_tourist/me
-//                guideならhttp://localhot:3000/current_guide/me
-//                にしてください
             }
         }
     }
@@ -57,8 +53,6 @@ class User: NSObject {
             let json = JSON(data: data!)
             print(json)
             if let token = json["access_token"].string {
-                print(token)
-                self.currentUser.oauthToken = token
                 let headers = ["Authorization": "Bearer \(token)"]
                 Alamofire.request(.GET, URL, headers: headers, parameters: ["scope": self.checkScopes(URL)] ).response {
                     (request, response, data, error) in
@@ -66,20 +60,11 @@ class User: NSObject {
                     let json = JSON(data: data!)
                     print("===============UserData===================")
                     print(json)
-                    self.saveOauthToken(token)
+                    self.id = json["id"].int
+                    print(self.id)
+                    self.saveUserData(token)
                 }
             }
-        }
-    }
-    
-    class func checkOauthToken() -> Bool {
-        let userDefaults = NSUserDefaults.standardUserDefaults()
-        let oauthToken = userDefaults.objectForKey("oauthToken")
-        print(oauthToken)
-        if oauthToken == nil {
-            return true
-        } else {
-            return false
         }
     }
     
@@ -91,15 +76,22 @@ class User: NSObject {
         }
     }
     
-    func saveOauthToken(token: String) {
+    func saveUserData(token: String) {
+        var userData = [String: AnyObject]()
+        userData["oauthToken"] = token
+        userData["name"] = name
+        userData["id"] = id
+        userData["scopes"] = scopes
+        
+        print(userData)
         let userDefaults = NSUserDefaults.standardUserDefaults()
-        userDefaults.setObject(currentUser.oauthToken, forKey: "oauthToken")
+        userDefaults.setObject(userData, forKey: "userData")
         userDefaults.synchronize()
     }
     
     func removeOautToken() {
         let userDefaults = NSUserDefaults.standardUserDefaults()
-        userDefaults.removeObjectForKey("oauthToken")
+        userDefaults.removeObjectForKey("userData")
     }
 
 }

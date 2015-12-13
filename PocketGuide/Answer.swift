@@ -10,5 +10,6 @@ import UIKit
 
 class Answer: NSObject {
     static let sharedAnswer = Answer()
+    var title = ""
     var answers = [String: AnyObject]()
 }
