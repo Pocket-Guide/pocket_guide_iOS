@@ -1,15 +1,16 @@
+
 //
-//  Question.swift
+//  Choice.swift
 //  PocketGuide
 //
-//  Created by Seo Kyohei on 2015/11/21.
+//  Created by Seo Kyohei on 2015/12/18.
 //  Copyright © 2015年 Kyohei Seo. All rights reserved.
 //
 
 import UIKit
 
-class Question: NSObject {
+class Choice: NSObject {
     var id: Int!
     var content: String!
-    var choises = [Choice]()
+    var questionID: Int!
 }

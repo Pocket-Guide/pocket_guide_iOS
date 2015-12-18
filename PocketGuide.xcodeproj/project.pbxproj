@@ -15,9 +15,6 @@
 		E2498FD11BEE19C70027467F /* LogInView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2498FD01BEE19C70027467F /* LogInView.xib */; };
 		E25F36F61C1DA03600AE1D4A /* japan.png in Resources */ = {isa = PBXBuildFile; fileRef = E25F36F51C1DA03600AE1D4A /* japan.png */; };
 		E2706EB21C004A05007D75EF /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2706EB11C004A05007D75EF /* Question.swift */; };
-		E2706EB41C004A22007D75EF /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2706EB31C004A22007D75EF /* QuestionViewController.swift */; };
-		E2706EB61C004B4A007D75EF /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2706EB51C004B4A007D75EF /* QuestionView.swift */; };
-		E276ABF51C1D4CF500FB594E /* QuestionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E276ABF41C1D4CF500FB594E /* QuestionView.xib */; };
 		E29F73931C196E0900F44F85 /* TourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29F73921C196E0900F44F85 /* TourViewController.swift */; };
 		E29F73961C196EC400F44F85 /* TourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29F73951C196EC400F44F85 /* TourView.swift */; };
 		E29F73981C196ED400F44F85 /* TourView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E29F73971C196ED400F44F85 /* TourView.xib */; };
@@ -30,6 +27,13 @@
 		E2D607E91BF4688000E15A7F /* SelectSignUpOrLogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D607E81BF4688000E15A7F /* SelectSignUpOrLogInView.swift */; };
 		E2D607EB1BF4689300E15A7F /* SelectSignUpOrLogInView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2D607EA1BF4689300E15A7F /* SelectSignUpOrLogInView.xib */; };
 		E2E3CB211C1010E0004FFF3B /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E3CB201C1010E0004FFF3B /* Answer.swift */; };
+		E2EC68161C23BEA200EC7706 /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EC68151C23BEA200EC7706 /* Choice.swift */; };
+		E2EC68181C23BEBD00EC7706 /* QuestionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EC68171C23BEBD00EC7706 /* QuestionManager.swift */; };
+		E2EC68291C23F55900EC7706 /* QuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EC68271C23F55900EC7706 /* QuestionTableViewCell.swift */; };
+		E2EC682A1C23F55900EC7706 /* QuestionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2EC68281C23F55900EC7706 /* QuestionTableViewCell.xib */; };
+		E2EC682C1C23F56E00EC7706 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EC682B1C23F56E00EC7706 /* QuestionView.swift */; };
+		E2EC682E1C23F57E00EC7706 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EC682D1C23F57E00EC7706 /* QuestionViewController.swift */; };
+		E2EC68321C23F5A500EC7706 /* QuestionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2EC68311C23F5A500EC7706 /* QuestionView.xib */; };
 		E2F3F5461BEDF37800F0E7B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F3F5451BEDF37800F0E7B3 /* AppDelegate.swift */; };
 		E2F3F54B1BEDF37800F0E7B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2F3F5491BEDF37800F0E7B3 /* Main.storyboard */; };
 		E2F3F54D1BEDF37800F0E7B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2F3F54C1BEDF37800F0E7B3 /* Assets.xcassets */; };
@@ -65,15 +69,11 @@
 		AF17B35C1AD22AAC7F88FF3F /* Pods-PocketGuide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketGuide.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PocketGuide/Pods-PocketGuide.debug.xcconfig"; sourceTree = "<group>"; };
 		E2026DFE1BEDF8D9000F8FBF /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		E2026DFF1BEDF8D9000F8FBF /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
-		E2448D081C0964E4004FD5A8 /* Checkbox-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Checkbox-Bridging-Header.h"; sourceTree = "<group>"; };
 		E2498FCC1BEE19A80027467F /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		E2498FCE1BEE19B90027467F /* LogInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		E2498FD01BEE19C70027467F /* LogInView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogInView.xib; sourceTree = "<group>"; };
 		E25F36F51C1DA03600AE1D4A /* japan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = japan.png; sourceTree = "<group>"; };
 		E2706EB11C004A05007D75EF /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
-		E2706EB31C004A22007D75EF /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
-		E2706EB51C004B4A007D75EF /* QuestionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
-		E276ABF41C1D4CF500FB594E /* QuestionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionView.xib; sourceTree = "<group>"; };
 		E29F73921C196E0900F44F85 /* TourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TourViewController.swift; sourceTree = "<group>"; };
 		E29F73951C196EC400F44F85 /* TourView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TourView.swift; sourceTree = "<group>"; };
 		E29F73971C196ED400F44F85 /* TourView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TourView.xib; sourceTree = "<group>"; };
@@ -86,6 +86,13 @@
 		E2D607E81BF4688000E15A7F /* SelectSignUpOrLogInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectSignUpOrLogInView.swift; sourceTree = "<group>"; };
 		E2D607EA1BF4689300E15A7F /* SelectSignUpOrLogInView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectSignUpOrLogInView.xib; sourceTree = "<group>"; };
 		E2E3CB201C1010E0004FFF3B /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		E2EC68151C23BEA200EC7706 /* Choice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Choice.swift; sourceTree = "<group>"; };
+		E2EC68171C23BEBD00EC7706 /* QuestionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionManager.swift; sourceTree = "<group>"; };
+		E2EC68271C23F55900EC7706 /* QuestionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionTableViewCell.swift; sourceTree = "<group>"; };
+		E2EC68281C23F55900EC7706 /* QuestionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionTableViewCell.xib; sourceTree = "<group>"; };
+		E2EC682B1C23F56E00EC7706 /* QuestionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		E2EC682D1C23F57E00EC7706 /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		E2EC68311C23F5A500EC7706 /* QuestionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionView.xib; sourceTree = "<group>"; };
 		E2F3F5421BEDF37800F0E7B3 /* PocketGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2F3F5451BEDF37800F0E7B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2F3F54A1BEDF37800F0E7B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -174,9 +181,10 @@
 		E2A948F71BFC61DA00986257 /* Question */ = {
 			isa = PBXGroup;
 			children = (
-				E2706EB31C004A22007D75EF /* QuestionViewController.swift */,
-				E2706EB51C004B4A007D75EF /* QuestionView.swift */,
-				E276ABF41C1D4CF500FB594E /* QuestionView.xib */,
+				E2EC68331C23F67F00EC7706 /* QuestionTableViewCell */,
+				E2EC682B1C23F56E00EC7706 /* QuestionView.swift */,
+				E2EC682D1C23F57E00EC7706 /* QuestionViewController.swift */,
+				E2EC68311C23F5A500EC7706 /* QuestionView.xib */,
 			);
 			name = Question;
 			sourceTree = "<group>";
@@ -199,6 +207,15 @@
 				E2D607EA1BF4689300E15A7F /* SelectSignUpOrLogInView.xib */,
 			);
 			name = SelectSignUpOrLogIn;
+			sourceTree = "<group>";
+		};
+		E2EC68331C23F67F00EC7706 /* QuestionTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E2EC68271C23F55900EC7706 /* QuestionTableViewCell.swift */,
+				E2EC68281C23F55900EC7706 /* QuestionTableViewCell.xib */,
+			);
+			name = QuestionTableViewCell;
 			sourceTree = "<group>";
 		};
 		E2F3F5391BEDF37800F0E7B3 = {
@@ -227,7 +244,6 @@
 		E2F3F5441BEDF37800F0E7B3 /* PocketGuide */ = {
 			isa = PBXGroup;
 			children = (
-				E2448D081C0964E4004FD5A8 /* Checkbox-Bridging-Header.h */,
 				E2F3F5491BEDF37800F0E7B3 /* Main.storyboard */,
 				E2F3F57A1BEDF74900F0E7B3 /* Models */,
 				E2AEDDDC1C098B2F0002F90D /* Plans */,
@@ -278,6 +294,8 @@
 				E2F3F57B1BEDF75A00F0E7B3 /* User.swift */,
 				E2D607E31BF462C300E15A7F /* CurrentUser.swift */,
 				E2706EB11C004A05007D75EF /* Question.swift */,
+				E2EC68171C23BEBD00EC7706 /* QuestionManager.swift */,
+				E2EC68151C23BEA200EC7706 /* Choice.swift */,
 				E2E3CB201C1010E0004FFF3B /* Answer.swift */,
 				E2D496C31C19E55800675786 /* Tour.swift */,
 			);
@@ -398,12 +416,13 @@
 				E2AEDDE21C098BA90002F90D /* PlansView.xib in Resources */,
 				E2F3F5791BEDF40B00F0E7B3 /* SignUpView.xib in Resources */,
 				E2F3F5501BEDF37800F0E7B3 /* LaunchScreen.storyboard in Resources */,
+				E2EC682A1C23F55900EC7706 /* QuestionTableViewCell.xib in Resources */,
 				E29F73981C196ED400F44F85 /* TourView.xib in Resources */,
 				E2498FD11BEE19C70027467F /* LogInView.xib in Resources */,
-				E276ABF51C1D4CF500FB594E /* QuestionView.xib in Resources */,
 				E2F3F54D1BEDF37800F0E7B3 /* Assets.xcassets in Resources */,
 				E2D607EB1BF4689300E15A7F /* SelectSignUpOrLogInView.xib in Resources */,
 				E25F36F61C1DA03600AE1D4A /* japan.png in Resources */,
+				E2EC68321C23F5A500EC7706 /* QuestionView.xib in Resources */,
 				E2F3F54B1BEDF37800F0E7B3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -492,16 +511,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2EC682C1C23F56E00EC7706 /* QuestionView.swift in Sources */,
 				E2498FCF1BEE19B90027467F /* LogInView.swift in Sources */,
+				E2EC682E1C23F57E00EC7706 /* QuestionViewController.swift in Sources */,
 				E2AEDDDE1C098B630002F90D /* PlansViewVontrollerViewController.swift in Sources */,
 				E2498FCD1BEE19A80027467F /* LogInViewController.swift in Sources */,
-				E2706EB41C004A22007D75EF /* QuestionViewController.swift in Sources */,
+				E2EC68181C23BEBD00EC7706 /* QuestionManager.swift in Sources */,
 				E2F3F5771BEDF3FE00F0E7B3 /* SignUpView.swift in Sources */,
 				E2F3F5751BEDF3ED00F0E7B3 /* SignUpViewController.swift in Sources */,
-				E2706EB61C004B4A007D75EF /* QuestionView.swift in Sources */,
+				E2EC68291C23F55900EC7706 /* QuestionTableViewCell.swift in Sources */,
 				E2F3F57C1BEDF75A00F0E7B3 /* User.swift in Sources */,
 				E2D607E41BF462C300E15A7F /* CurrentUser.swift in Sources */,
 				E2AEDDE01C098B8F0002F90D /* PlansView.swift in Sources */,
+				E2EC68161C23BEA200EC7706 /* Choice.swift in Sources */,
 				E2F3F5461BEDF37800F0E7B3 /* AppDelegate.swift in Sources */,
 				E2D607E61BF4685000E15A7F /* SelectSignUpOrLogInViewController.swift in Sources */,
 				E29F73931C196E0900F44F85 /* TourViewController.swift in Sources */,
@@ -658,7 +680,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.seokyohei.PocketGuide;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT)/Checkbox-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
 			};
 			name = Debug;
@@ -676,7 +698,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.seokyohei.PocketGuide;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT)/Checkbox-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
 			};
 			name = Release;
