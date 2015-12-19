@@ -38,7 +38,7 @@
 		E2F3F57C1BEDF75A00F0E7B3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F3F57B1BEDF75A00F0E7B3 /* User.swift */; };
 		E2F7384F1C2575AF004CC694 /* AnswerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F7384E1C2575AF004CC694 /* AnswerManager.swift */; };
 		E2F738511C2575D0004CC694 /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F738501C2575D0004CC694 /* Plan.swift */; };
-		E2F738541C257657004CC694 /* TourIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F738531C257657004CC694 /* TourIndexViewController.swift */; };
+		E2F738541C257657004CC694 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F738531C257657004CC694 /* ViewController.swift */; };
 		E2F738571C257687004CC694 /* PlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F738561C257687004CC694 /* PlanViewController.swift */; };
 		E2F738591C25769D004CC694 /* PlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F738581C25769D004CC694 /* PlanView.swift */; };
 		E2F7385B1C2576B6004CC694 /* PlanView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2F7385A1C2576B6004CC694 /* PlanView.xib */; };
@@ -101,7 +101,7 @@
 		E2F3F57B1BEDF75A00F0E7B3 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E2F7384E1C2575AF004CC694 /* AnswerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerManager.swift; sourceTree = "<group>"; };
 		E2F738501C2575D0004CC694 /* Plan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plan.swift; sourceTree = "<group>"; };
-		E2F738531C257657004CC694 /* TourIndexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TourIndexViewController.swift; sourceTree = "<group>"; };
+		E2F738531C257657004CC694 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E2F738561C257687004CC694 /* PlanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanViewController.swift; sourceTree = "<group>"; };
 		E2F738581C25769D004CC694 /* PlanView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanView.swift; sourceTree = "<group>"; };
 		E2F7385A1C2576B6004CC694 /* PlanView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlanView.xib; sourceTree = "<group>"; };
@@ -281,7 +281,7 @@
 		E2F738521C25763A004CC694 /* TourIndex */ = {
 			isa = PBXGroup;
 			children = (
-				E2F738531C257657004CC694 /* TourIndexViewController.swift */,
+				E2F738531C257657004CC694 /* ViewController.swift */,
 			);
 			name = TourIndex;
 			sourceTree = "<group>";
@@ -509,7 +509,7 @@
 				E2F738511C2575D0004CC694 /* Plan.swift in Sources */,
 				E2EC682E1C23F57E00EC7706 /* QuestionViewController.swift in Sources */,
 				E2498FCD1BEE19A80027467F /* LogInViewController.swift in Sources */,
-				E2F738541C257657004CC694 /* TourIndexViewController.swift in Sources */,
+				E2F738541C257657004CC694 /* ViewController.swift in Sources */,
 				E2F7384F1C2575AF004CC694 /* AnswerManager.swift in Sources */,
 				E2EC68181C23BEBD00EC7706 /* QuestionManager.swift in Sources */,
 				E2F3F5771BEDF3FE00F0E7B3 /* SignUpView.swift in Sources */,

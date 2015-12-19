@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Planning", style: .Plain, target: self, action: "moveToQuestionViewController")
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Planning", style: .Plain, target: self, action: "moveToPlanViewController")
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func moveToQuestionViewController() {
+    func moveToPlanViewController() {
         performSegueWithIdentifier("ModalPlanViewController", sender: nil)
     }
 }
