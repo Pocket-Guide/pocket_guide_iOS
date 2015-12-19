@@ -8,18 +8,20 @@
 
 import UIKit
 
-class TourViewController: UIViewController {
-
+class PlanViewController: UIViewController {
+    
+    let answerManager = AnswerManager.sharedAnswerManager
+    
     override func loadView() {
         super.loadView()
-        let nib = UINib(nibName: "TourView", bundle: nil)
+        let nib = UINib(nibName: "PlanView", bundle: nil)
         view = nib.instantiateWithOwner(nil, options: nil).first as! UIView
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let tourView = view as! TourView
-        tourView.startButton.addTarget(self, action: "tapStartButton", forControlEvents: .TouchUpInside)
+        let planView = view as! PlanView
+        planView.startButton.addTarget(self, action: "tapStartButton", forControlEvents: .TouchUpInside)
         
     }
     
@@ -27,7 +29,7 @@ class TourViewController: UIViewController {
         super.viewWillAppear(animated)
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Close", style: .Plain, target: self, action: "tapCloseButton")
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -37,9 +39,9 @@ class TourViewController: UIViewController {
     }
     
     func tapStartButton() {
-        let tourView = view as! TourView
-        let tour = Tour.sharedTour
-        tour.title = tourView.textField.text!
+        let planView = view as! PlanView
+        title = planView.textField.text
+        answerManager.makePlan(title!)
         performSegueWithIdentifier("ShowQuestionViewController", sender: nil)
     }
     

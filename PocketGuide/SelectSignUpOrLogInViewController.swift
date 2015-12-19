@@ -15,7 +15,12 @@ class SelectSignUpOrLogInViewController: UIViewController {
         let nib = UINib(nibName: "SelectSignUpOrLogInView", bundle: nil)
         view = nib.instantiateWithOwner(nil, options: nil).first as! UIView
     }
-
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.hidden = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let selectSignUpOrLogInView = view as!SelectSignUpOrLogInView
@@ -35,5 +40,5 @@ class SelectSignUpOrLogInViewController: UIViewController {
     func tapSignUpButton() {
         performSegueWithIdentifier("ShowSignUpViewController", sender: nil)
     }
-
+    
 }

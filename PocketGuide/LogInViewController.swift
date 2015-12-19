@@ -35,7 +35,7 @@ class LogInViewController: UIViewController {
     }
     
     func tapGoBackButton() {
-        dismissViewControllerAnimated(true, completion: nil)
+        navigationController?.popViewControllerAnimated(true)
     }
     
     func tapGuideButton() {
@@ -60,6 +60,8 @@ class LogInViewController: UIViewController {
     func logInUser() {
         let logInView = view as! LogInView
         let user = User(email: logInView.emailTextField.text!, password: logInView.passwordTextField.text!)
-        user.logIn(URL)
+        user.logIn(URL) { () -> Void in
+            self.dismissViewControllerAnimated(true, completion: nil)
+        }
     }
 }

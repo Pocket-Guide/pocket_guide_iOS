@@ -12,7 +12,8 @@ import SwiftyJSON
 
 class QuestionManager: NSObject, UITableViewDataSource {
     var questions = [Question]()
-    var numberOfCurrentQuestion = 0
+    var presentQuesiton = 0
+    var numberOfQuestion: Int!
     
     //質問とその選択肢を取得するメソッド
     func getQuestion(token: String, callback: () -> Void) {
@@ -39,6 +40,8 @@ class QuestionManager: NSObject, UITableViewDataSource {
                     }
                     self.questions.append(question)
                 }
+                self.numberOfQuestion = self.questions.count
+                print(self.numberOfQuestion)
                 
                 callback()
                 
@@ -56,21 +59,21 @@ class QuestionManager: NSObject, UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("QuestionTableViewCell", forIndexPath: indexPath) as! QuestionTableViewCell
         if questions.count > 0 {
-            cell.choiceContent.text = questions[numberOfCurrentQuestion].choises[indexPath.row].content
+            cell.choiceContent.text = questions[presentQuesiton].choises[indexPath.row].content
         }
         return cell
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if questions.count > 0 {
-            return questions[numberOfCurrentQuestion].choises.count
+            return questions[presentQuesiton].choises.count
         }
         return 0
     }
     
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if questions.count > 0 {
-            return questions[numberOfCurrentQuestion].content
+            return questions[presentQuesiton].content
         }
         return ""
     }

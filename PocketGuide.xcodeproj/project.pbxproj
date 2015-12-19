@@ -15,18 +15,10 @@
 		E2498FD11BEE19C70027467F /* LogInView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2498FD01BEE19C70027467F /* LogInView.xib */; };
 		E25F36F61C1DA03600AE1D4A /* japan.png in Resources */ = {isa = PBXBuildFile; fileRef = E25F36F51C1DA03600AE1D4A /* japan.png */; };
 		E2706EB21C004A05007D75EF /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2706EB11C004A05007D75EF /* Question.swift */; };
-		E29F73931C196E0900F44F85 /* TourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29F73921C196E0900F44F85 /* TourViewController.swift */; };
-		E29F73961C196EC400F44F85 /* TourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29F73951C196EC400F44F85 /* TourView.swift */; };
-		E29F73981C196ED400F44F85 /* TourView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E29F73971C196ED400F44F85 /* TourView.xib */; };
-		E2AEDDDE1C098B630002F90D /* PlansViewVontrollerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AEDDDD1C098B630002F90D /* PlansViewVontrollerViewController.swift */; };
-		E2AEDDE01C098B8F0002F90D /* PlansView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AEDDDF1C098B8F0002F90D /* PlansView.swift */; };
-		E2AEDDE21C098BA90002F90D /* PlansView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2AEDDE11C098BA90002F90D /* PlansView.xib */; };
-		E2D496C41C19E55800675786 /* Tour.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D496C31C19E55800675786 /* Tour.swift */; };
 		E2D607E41BF462C300E15A7F /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D607E31BF462C300E15A7F /* CurrentUser.swift */; };
 		E2D607E61BF4685000E15A7F /* SelectSignUpOrLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D607E51BF4685000E15A7F /* SelectSignUpOrLogInViewController.swift */; };
 		E2D607E91BF4688000E15A7F /* SelectSignUpOrLogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D607E81BF4688000E15A7F /* SelectSignUpOrLogInView.swift */; };
 		E2D607EB1BF4689300E15A7F /* SelectSignUpOrLogInView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2D607EA1BF4689300E15A7F /* SelectSignUpOrLogInView.xib */; };
-		E2E3CB211C1010E0004FFF3B /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E3CB201C1010E0004FFF3B /* Answer.swift */; };
 		E2EC68161C23BEA200EC7706 /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EC68151C23BEA200EC7706 /* Choice.swift */; };
 		E2EC68181C23BEBD00EC7706 /* QuestionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EC68171C23BEBD00EC7706 /* QuestionManager.swift */; };
 		E2EC68291C23F55900EC7706 /* QuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EC68271C23F55900EC7706 /* QuestionTableViewCell.swift */; };
@@ -44,6 +36,12 @@
 		E2F3F5771BEDF3FE00F0E7B3 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F3F5761BEDF3FE00F0E7B3 /* SignUpView.swift */; };
 		E2F3F5791BEDF40B00F0E7B3 /* SignUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2F3F5781BEDF40B00F0E7B3 /* SignUpView.xib */; };
 		E2F3F57C1BEDF75A00F0E7B3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F3F57B1BEDF75A00F0E7B3 /* User.swift */; };
+		E2F7384F1C2575AF004CC694 /* AnswerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F7384E1C2575AF004CC694 /* AnswerManager.swift */; };
+		E2F738511C2575D0004CC694 /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F738501C2575D0004CC694 /* Plan.swift */; };
+		E2F738541C257657004CC694 /* TourIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F738531C257657004CC694 /* TourIndexViewController.swift */; };
+		E2F738571C257687004CC694 /* PlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F738561C257687004CC694 /* PlanViewController.swift */; };
+		E2F738591C25769D004CC694 /* PlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F738581C25769D004CC694 /* PlanView.swift */; };
+		E2F7385B1C2576B6004CC694 /* PlanView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2F7385A1C2576B6004CC694 /* PlanView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,18 +72,10 @@
 		E2498FD01BEE19C70027467F /* LogInView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogInView.xib; sourceTree = "<group>"; };
 		E25F36F51C1DA03600AE1D4A /* japan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = japan.png; sourceTree = "<group>"; };
 		E2706EB11C004A05007D75EF /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
-		E29F73921C196E0900F44F85 /* TourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TourViewController.swift; sourceTree = "<group>"; };
-		E29F73951C196EC400F44F85 /* TourView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TourView.swift; sourceTree = "<group>"; };
-		E29F73971C196ED400F44F85 /* TourView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TourView.xib; sourceTree = "<group>"; };
-		E2AEDDDD1C098B630002F90D /* PlansViewVontrollerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlansViewVontrollerViewController.swift; sourceTree = "<group>"; };
-		E2AEDDDF1C098B8F0002F90D /* PlansView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlansView.swift; sourceTree = "<group>"; };
-		E2AEDDE11C098BA90002F90D /* PlansView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlansView.xib; sourceTree = "<group>"; };
-		E2D496C31C19E55800675786 /* Tour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tour.swift; sourceTree = "<group>"; };
 		E2D607E31BF462C300E15A7F /* CurrentUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = "<group>"; };
 		E2D607E51BF4685000E15A7F /* SelectSignUpOrLogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectSignUpOrLogInViewController.swift; sourceTree = "<group>"; };
 		E2D607E81BF4688000E15A7F /* SelectSignUpOrLogInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectSignUpOrLogInView.swift; sourceTree = "<group>"; };
 		E2D607EA1BF4689300E15A7F /* SelectSignUpOrLogInView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectSignUpOrLogInView.xib; sourceTree = "<group>"; };
-		E2E3CB201C1010E0004FFF3B /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		E2EC68151C23BEA200EC7706 /* Choice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Choice.swift; sourceTree = "<group>"; };
 		E2EC68171C23BEBD00EC7706 /* QuestionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionManager.swift; sourceTree = "<group>"; };
 		E2EC68271C23F55900EC7706 /* QuestionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionTableViewCell.swift; sourceTree = "<group>"; };
@@ -109,6 +99,12 @@
 		E2F3F5761BEDF3FE00F0E7B3 /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		E2F3F5781BEDF40B00F0E7B3 /* SignUpView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpView.xib; sourceTree = "<group>"; };
 		E2F3F57B1BEDF75A00F0E7B3 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E2F7384E1C2575AF004CC694 /* AnswerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerManager.swift; sourceTree = "<group>"; };
+		E2F738501C2575D0004CC694 /* Plan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plan.swift; sourceTree = "<group>"; };
+		E2F738531C257657004CC694 /* TourIndexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TourIndexViewController.swift; sourceTree = "<group>"; };
+		E2F738561C257687004CC694 /* PlanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanViewController.swift; sourceTree = "<group>"; };
+		E2F738581C25769D004CC694 /* PlanView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanView.swift; sourceTree = "<group>"; };
+		E2F7385A1C2576B6004CC694 /* PlanView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlanView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,35 +164,15 @@
 			name = "Log in";
 			sourceTree = "<group>";
 		};
-		E29F73941C196E1F00F44F85 /* Tour */ = {
-			isa = PBXGroup;
-			children = (
-				E29F73921C196E0900F44F85 /* TourViewController.swift */,
-				E29F73951C196EC400F44F85 /* TourView.swift */,
-				E29F73971C196ED400F44F85 /* TourView.xib */,
-			);
-			name = Tour;
-			sourceTree = "<group>";
-		};
 		E2A948F71BFC61DA00986257 /* Question */ = {
 			isa = PBXGroup;
 			children = (
-				E2EC68331C23F67F00EC7706 /* QuestionTableViewCell */,
-				E2EC682B1C23F56E00EC7706 /* QuestionView.swift */,
 				E2EC682D1C23F57E00EC7706 /* QuestionViewController.swift */,
+				E2EC682B1C23F56E00EC7706 /* QuestionView.swift */,
 				E2EC68311C23F5A500EC7706 /* QuestionView.xib */,
+				E2EC68331C23F67F00EC7706 /* QuestionTableViewCell */,
 			);
 			name = Question;
-			sourceTree = "<group>";
-		};
-		E2AEDDDC1C098B2F0002F90D /* Plans */ = {
-			isa = PBXGroup;
-			children = (
-				E2AEDDDD1C098B630002F90D /* PlansViewVontrollerViewController.swift */,
-				E2AEDDDF1C098B8F0002F90D /* PlansView.swift */,
-				E2AEDDE11C098BA90002F90D /* PlansView.xib */,
-			);
-			name = Plans;
 			sourceTree = "<group>";
 		};
 		E2D607E71BF4685600E15A7F /* SelectSignUpOrLogIn */ = {
@@ -246,8 +222,8 @@
 			children = (
 				E2F3F5491BEDF37800F0E7B3 /* Main.storyboard */,
 				E2F3F57A1BEDF74900F0E7B3 /* Models */,
-				E2AEDDDC1C098B2F0002F90D /* Plans */,
-				E29F73941C196E1F00F44F85 /* Tour */,
+				E2F738521C25763A004CC694 /* TourIndex */,
+				E2F738551C257676004CC694 /* Plan */,
 				E2A948F71BFC61DA00986257 /* Question */,
 				E2D607E71BF4685600E15A7F /* SelectSignUpOrLogIn */,
 				E2498FC91BEE10880027467F /* Log in */,
@@ -293,13 +269,31 @@
 			children = (
 				E2F3F57B1BEDF75A00F0E7B3 /* User.swift */,
 				E2D607E31BF462C300E15A7F /* CurrentUser.swift */,
+				E2F738501C2575D0004CC694 /* Plan.swift */,
 				E2706EB11C004A05007D75EF /* Question.swift */,
 				E2EC68171C23BEBD00EC7706 /* QuestionManager.swift */,
 				E2EC68151C23BEA200EC7706 /* Choice.swift */,
-				E2E3CB201C1010E0004FFF3B /* Answer.swift */,
-				E2D496C31C19E55800675786 /* Tour.swift */,
+				E2F7384E1C2575AF004CC694 /* AnswerManager.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		E2F738521C25763A004CC694 /* TourIndex */ = {
+			isa = PBXGroup;
+			children = (
+				E2F738531C257657004CC694 /* TourIndexViewController.swift */,
+			);
+			name = TourIndex;
+			sourceTree = "<group>";
+		};
+		E2F738551C257676004CC694 /* Plan */ = {
+			isa = PBXGroup;
+			children = (
+				E2F738561C257687004CC694 /* PlanViewController.swift */,
+				E2F738581C25769D004CC694 /* PlanView.swift */,
+				E2F7385A1C2576B6004CC694 /* PlanView.xib */,
+			);
+			name = Plan;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -413,11 +407,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2AEDDE21C098BA90002F90D /* PlansView.xib in Resources */,
 				E2F3F5791BEDF40B00F0E7B3 /* SignUpView.xib in Resources */,
+				E2F7385B1C2576B6004CC694 /* PlanView.xib in Resources */,
 				E2F3F5501BEDF37800F0E7B3 /* LaunchScreen.storyboard in Resources */,
 				E2EC682A1C23F55900EC7706 /* QuestionTableViewCell.xib in Resources */,
-				E29F73981C196ED400F44F85 /* TourView.xib in Resources */,
 				E2498FD11BEE19C70027467F /* LogInView.xib in Resources */,
 				E2F3F54D1BEDF37800F0E7B3 /* Assets.xcassets in Resources */,
 				E2D607EB1BF4689300E15A7F /* SelectSignUpOrLogInView.xib in Resources */,
@@ -513,25 +506,24 @@
 			files = (
 				E2EC682C1C23F56E00EC7706 /* QuestionView.swift in Sources */,
 				E2498FCF1BEE19B90027467F /* LogInView.swift in Sources */,
+				E2F738511C2575D0004CC694 /* Plan.swift in Sources */,
 				E2EC682E1C23F57E00EC7706 /* QuestionViewController.swift in Sources */,
-				E2AEDDDE1C098B630002F90D /* PlansViewVontrollerViewController.swift in Sources */,
 				E2498FCD1BEE19A80027467F /* LogInViewController.swift in Sources */,
+				E2F738541C257657004CC694 /* TourIndexViewController.swift in Sources */,
+				E2F7384F1C2575AF004CC694 /* AnswerManager.swift in Sources */,
 				E2EC68181C23BEBD00EC7706 /* QuestionManager.swift in Sources */,
 				E2F3F5771BEDF3FE00F0E7B3 /* SignUpView.swift in Sources */,
 				E2F3F5751BEDF3ED00F0E7B3 /* SignUpViewController.swift in Sources */,
 				E2EC68291C23F55900EC7706 /* QuestionTableViewCell.swift in Sources */,
 				E2F3F57C1BEDF75A00F0E7B3 /* User.swift in Sources */,
 				E2D607E41BF462C300E15A7F /* CurrentUser.swift in Sources */,
-				E2AEDDE01C098B8F0002F90D /* PlansView.swift in Sources */,
 				E2EC68161C23BEA200EC7706 /* Choice.swift in Sources */,
+				E2F738571C257687004CC694 /* PlanViewController.swift in Sources */,
 				E2F3F5461BEDF37800F0E7B3 /* AppDelegate.swift in Sources */,
 				E2D607E61BF4685000E15A7F /* SelectSignUpOrLogInViewController.swift in Sources */,
-				E29F73931C196E0900F44F85 /* TourViewController.swift in Sources */,
-				E29F73961C196EC400F44F85 /* TourView.swift in Sources */,
-				E2E3CB211C1010E0004FFF3B /* Answer.swift in Sources */,
-				E2D496C41C19E55800675786 /* Tour.swift in Sources */,
 				E2706EB21C004A05007D75EF /* Question.swift in Sources */,
 				E2D607E91BF4688000E15A7F /* SelectSignUpOrLogInView.swift in Sources */,
+				E2F738591C25769D004CC694 /* PlanView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

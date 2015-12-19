@@ -10,7 +10,9 @@ import UIKit
 import Alamofire
 
 class CurrentUser: NSObject {
+    //シングルトン
     static let sharedCurrentUser = CurrentUser()
+    
     var name: String!
     var id: Int!
     var scope: String!
@@ -27,25 +29,8 @@ class CurrentUser: NSObject {
             id = userData!["id"] as! Int
             scope = userData!["scopes"] as! String
             oauthToken = userData!["oauthToken"] as? String
-            print(name)
-            print(id)
-            print(scope)
-            print(oauthToken)
             return false
         }
     }
     
-//    func getCurrentUser() {
-//        let headers = ["Authorization": "Bearer \(oauthToken)"]
-//        let URL = "http://localhost:3000/current_tourist/me"
-//        Alamofire.request(.GET, URL, headers: headers, parameters: ["scope": self.checkScopes(URL)] ).response {
-//            (request, response, data, error) in
-//            print(error)
-//            let json = JSON(data: data!)
-//            print("===============UserData===================")
-//            print(json)
-//            self.saveOauthToken(token)
-//        }
-//    }
-
 }

@@ -8,27 +8,30 @@
 
 import UIKit
 
-class PlansViewVontrollerViewController: UIViewController {
-
+class ViewController: UIViewController {
+    let currentUser = CurrentUser.sharedCurrentUser
     override func viewDidLoad() {
         super.viewDidLoad()
-        let currentUser = CurrentUser()
-        if currentUser.checkOauthToken() {
-            performSegueWithIdentifier("ModalSelectSignUpOrLogIn", sender: nil)
-        }
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Planning", style: .Plain, target: self, action: "moveToQuestionViewController")
     }
-
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        if currentUser.checkOauthToken() {
+            performSegueWithIdentifier("ModalSelectSignUpOrLogIn", sender: nil)
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
     func moveToQuestionViewController() {
-        performSegueWithIdentifier("ModalTourViewController", sender: nil)
+        performSegueWithIdentifier("ModalPlanViewController", sender: nil)
     }
 }
