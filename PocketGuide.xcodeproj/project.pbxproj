@@ -13,7 +13,12 @@
 		E2498FCD1BEE19A80027467F /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2498FCC1BEE19A80027467F /* LogInViewController.swift */; };
 		E2498FCF1BEE19B90027467F /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2498FCE1BEE19B90027467F /* LogInView.swift */; };
 		E2498FD11BEE19C70027467F /* LogInView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2498FD01BEE19C70027467F /* LogInView.xib */; };
-		E25F36F61C1DA03600AE1D4A /* japan.png in Resources */ = {isa = PBXBuildFile; fileRef = E25F36F51C1DA03600AE1D4A /* japan.png */; };
+		E257E2621C26FDC8003A182A /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = E257E2611C26FDC8003A182A /* Location.swift */; };
+		E257E3051C2A9AE2003A182A /* SignUpAndLogInNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E257E3041C2A9AE2003A182A /* SignUpAndLogInNavigationBar.swift */; };
+		E257E3081C2A9E16003A182A /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E257E3071C2A9E16003A182A /* UIColor+Extension.swift */; };
+		E257E30A1C2A9E62003A182A /* UINavigaitonBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E257E3091C2A9E62003A182A /* UINavigaitonBar+Extension.swift */; };
+		E257E3231C2AB177003A182A /* chikudo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E257E3221C2AB177003A182A /* chikudo.jpg */; };
+		E257E3631C2B0012003A182A /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E257E3621C2B0012003A182A /* UIImageView+Extension.swift */; };
 		E2706EB21C004A05007D75EF /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2706EB11C004A05007D75EF /* Question.swift */; };
 		E2D607E41BF462C300E15A7F /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D607E31BF462C300E15A7F /* CurrentUser.swift */; };
 		E2D607E61BF4685000E15A7F /* SelectSignUpOrLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D607E51BF4685000E15A7F /* SelectSignUpOrLogInViewController.swift */; };
@@ -70,7 +75,12 @@
 		E2498FCC1BEE19A80027467F /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		E2498FCE1BEE19B90027467F /* LogInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		E2498FD01BEE19C70027467F /* LogInView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogInView.xib; sourceTree = "<group>"; };
-		E25F36F51C1DA03600AE1D4A /* japan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = japan.png; sourceTree = "<group>"; };
+		E257E2611C26FDC8003A182A /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		E257E3041C2A9AE2003A182A /* SignUpAndLogInNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpAndLogInNavigationBar.swift; sourceTree = "<group>"; };
+		E257E3071C2A9E16003A182A /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		E257E3091C2A9E62003A182A /* UINavigaitonBar+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigaitonBar+Extension.swift"; sourceTree = "<group>"; };
+		E257E3221C2AB177003A182A /* chikudo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chikudo.jpg; sourceTree = "<group>"; };
+		E257E3621C2B0012003A182A /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		E2706EB11C004A05007D75EF /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		E2D607E31BF462C300E15A7F /* CurrentUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = "<group>"; };
 		E2D607E51BF4685000E15A7F /* SelectSignUpOrLogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectSignUpOrLogInViewController.swift; sourceTree = "<group>"; };
@@ -164,6 +174,24 @@
 			name = "Log in";
 			sourceTree = "<group>";
 		};
+		E257E3061C2A9D84003A182A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E257E3071C2A9E16003A182A /* UIColor+Extension.swift */,
+				E257E3091C2A9E62003A182A /* UINavigaitonBar+Extension.swift */,
+				E257E3621C2B0012003A182A /* UIImageView+Extension.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		E257E3211C2AAB14003A182A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E257E3221C2AB177003A182A /* chikudo.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		E2A948F71BFC61DA00986257 /* Question */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +209,7 @@
 				E2D607E51BF4685000E15A7F /* SelectSignUpOrLogInViewController.swift */,
 				E2D607E81BF4688000E15A7F /* SelectSignUpOrLogInView.swift */,
 				E2D607EA1BF4689300E15A7F /* SelectSignUpOrLogInView.xib */,
+				E257E3041C2A9AE2003A182A /* SignUpAndLogInNavigationBar.swift */,
 			);
 			name = SelectSignUpOrLogIn;
 			sourceTree = "<group>";
@@ -198,7 +227,6 @@
 			isa = PBXGroup;
 			children = (
 				E2F3F5441BEDF37800F0E7B3 /* PocketGuide */,
-				E25F36F51C1DA03600AE1D4A /* japan.png */,
 				E2F3F5591BEDF37800F0E7B3 /* PocketGuideTests */,
 				E2F3F5641BEDF37800F0E7B3 /* PocketGuideUITests */,
 				E2F3F5431BEDF37800F0E7B3 /* Products */,
@@ -220,6 +248,8 @@
 		E2F3F5441BEDF37800F0E7B3 /* PocketGuide */ = {
 			isa = PBXGroup;
 			children = (
+				E257E3211C2AAB14003A182A /* Images */,
+				E257E3061C2A9D84003A182A /* Extension */,
 				E2F3F5491BEDF37800F0E7B3 /* Main.storyboard */,
 				E2F3F57A1BEDF74900F0E7B3 /* Models */,
 				E2F738521C25763A004CC694 /* TourIndex */,
@@ -273,6 +303,7 @@
 				E2706EB11C004A05007D75EF /* Question.swift */,
 				E2EC68171C23BEBD00EC7706 /* QuestionManager.swift */,
 				E2EC68151C23BEA200EC7706 /* Choice.swift */,
+				E257E2611C26FDC8003A182A /* Location.swift */,
 				E2F7384E1C2575AF004CC694 /* AnswerManager.swift */,
 			);
 			name = Models;
@@ -410,11 +441,11 @@
 				E2F3F5791BEDF40B00F0E7B3 /* SignUpView.xib in Resources */,
 				E2F7385B1C2576B6004CC694 /* PlanView.xib in Resources */,
 				E2F3F5501BEDF37800F0E7B3 /* LaunchScreen.storyboard in Resources */,
+				E257E3231C2AB177003A182A /* chikudo.jpg in Resources */,
 				E2EC682A1C23F55900EC7706 /* QuestionTableViewCell.xib in Resources */,
 				E2498FD11BEE19C70027467F /* LogInView.xib in Resources */,
 				E2F3F54D1BEDF37800F0E7B3 /* Assets.xcassets in Resources */,
 				E2D607EB1BF4689300E15A7F /* SelectSignUpOrLogInView.xib in Resources */,
-				E25F36F61C1DA03600AE1D4A /* japan.png in Resources */,
 				E2EC68321C23F5A500EC7706 /* QuestionView.xib in Resources */,
 				E2F3F54B1BEDF37800F0E7B3 /* Main.storyboard in Resources */,
 			);
@@ -509,16 +540,21 @@
 				E2F738511C2575D0004CC694 /* Plan.swift in Sources */,
 				E2EC682E1C23F57E00EC7706 /* QuestionViewController.swift in Sources */,
 				E2498FCD1BEE19A80027467F /* LogInViewController.swift in Sources */,
+				E257E30A1C2A9E62003A182A /* UINavigaitonBar+Extension.swift in Sources */,
 				E2F738541C257657004CC694 /* ViewController.swift in Sources */,
 				E2F7384F1C2575AF004CC694 /* AnswerManager.swift in Sources */,
 				E2EC68181C23BEBD00EC7706 /* QuestionManager.swift in Sources */,
 				E2F3F5771BEDF3FE00F0E7B3 /* SignUpView.swift in Sources */,
+				E257E3631C2B0012003A182A /* UIImageView+Extension.swift in Sources */,
+				E257E3051C2A9AE2003A182A /* SignUpAndLogInNavigationBar.swift in Sources */,
 				E2F3F5751BEDF3ED00F0E7B3 /* SignUpViewController.swift in Sources */,
 				E2EC68291C23F55900EC7706 /* QuestionTableViewCell.swift in Sources */,
 				E2F3F57C1BEDF75A00F0E7B3 /* User.swift in Sources */,
 				E2D607E41BF462C300E15A7F /* CurrentUser.swift in Sources */,
+				E257E2621C26FDC8003A182A /* Location.swift in Sources */,
 				E2EC68161C23BEA200EC7706 /* Choice.swift in Sources */,
 				E2F738571C257687004CC694 /* PlanViewController.swift in Sources */,
+				E257E3081C2A9E16003A182A /* UIColor+Extension.swift in Sources */,
 				E2F3F5461BEDF37800F0E7B3 /* AppDelegate.swift in Sources */,
 				E2D607E61BF4685000E15A7F /* SelectSignUpOrLogInViewController.swift in Sources */,
 				E2706EB21C004A05007D75EF /* Question.swift in Sources */,
