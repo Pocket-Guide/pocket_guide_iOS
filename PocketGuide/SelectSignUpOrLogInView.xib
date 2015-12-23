@@ -11,19 +11,66 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chikudo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mDS-Sj-yBC">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chikudo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mDS-Sj-yBC">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bZ-rl-XmC">
-                    <rect key="frame" x="58" y="429" width="52" height="30"/>
-                    <state key="normal" title="Sign up"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tLO-ft-e5M">
+                    <rect key="frame" x="26" y="566" width="323" height="46"/>
+                    <color key="backgroundColor" red="0.65490196078431373" green="0.88627450980392153" blue="0.88235294117647056" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="bU0-zY-Qc5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                    <state key="normal" title="Log in">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tLO-ft-e5M">
-                    <rect key="frame" x="270" y="429" width="42" height="30"/>
-                    <state key="normal" title="Log in"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pocket_Guide-logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="y7Q-ba-kxG">
+                    <rect key="frame" x="26" y="130" width="311" height="175"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="175" id="vt4-6J-hJo"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To look forward to go to Japan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27R-Oh-0kT">
+                    <rect key="frame" x="26" y="305" width="313" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="YXt-JI-07Q"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bZ-rl-XmC">
+                    <rect key="frame" x="26" y="504" width="323" height="46"/>
+                    <color key="backgroundColor" red="0.65490196078431373" green="0.88627450980392153" blue="0.88235294117647056" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="CO0-vw-zqt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                    <state key="normal" title="Sign up">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="tLO-ft-e5M" firstAttribute="top" secondItem="4bZ-rl-XmC" secondAttribute="bottom" constant="16" id="AFU-iR-w4h"/>
+                <constraint firstItem="mDS-Sj-yBC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="B3S-kM-XmP"/>
+                <constraint firstItem="y7Q-ba-kxG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="26" id="CKd-Sc-w14"/>
+                <constraint firstItem="y7Q-ba-kxG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="130" id="DbW-tf-FWE"/>
+                <constraint firstItem="27R-Oh-0kT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="26" id="EwN-Zh-SVY"/>
+                <constraint firstAttribute="bottom" secondItem="mDS-Sj-yBC" secondAttribute="bottom" id="P9A-Wx-3Ah"/>
+                <constraint firstItem="27R-Oh-0kT" firstAttribute="top" secondItem="y7Q-ba-kxG" secondAttribute="bottom" id="RIf-tf-xjb"/>
+                <constraint firstAttribute="bottom" secondItem="tLO-ft-e5M" secondAttribute="bottom" constant="55" id="T9q-Ki-Etf"/>
+                <constraint firstAttribute="trailing" secondItem="4bZ-rl-XmC" secondAttribute="trailing" constant="26" id="VHB-TC-MON"/>
+                <constraint firstItem="mDS-Sj-yBC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="X0Q-W2-bp0"/>
+                <constraint firstAttribute="trailing" secondItem="mDS-Sj-yBC" secondAttribute="trailing" id="Xtf-sq-2GT"/>
+                <constraint firstAttribute="trailing" secondItem="y7Q-ba-kxG" secondAttribute="trailing" constant="38" id="bxD-WM-kB1"/>
+                <constraint firstAttribute="trailing" secondItem="27R-Oh-0kT" secondAttribute="trailing" constant="36" id="dFU-bf-lAt"/>
+                <constraint firstItem="tLO-ft-e5M" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="26" id="hvQ-b6-nz9"/>
+                <constraint firstAttribute="trailing" secondItem="tLO-ft-e5M" secondAttribute="trailing" constant="26" id="kMD-6I-oo3"/>
+                <constraint firstItem="4bZ-rl-XmC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="26" id="pF5-Wi-Ipa"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <connections>
                 <outlet property="backImageView" destination="mDS-Sj-yBC" id="Y1l-Tq-5Yr"/>
@@ -33,6 +80,7 @@
         </view>
     </objects>
     <resources>
+        <image name="Pocket_Guide-logo.png" width="400" height="205"/>
         <image name="chikudo.jpg" width="846" height="490"/>
     </resources>
 </document>

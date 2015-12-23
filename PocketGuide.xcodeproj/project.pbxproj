@@ -14,11 +14,11 @@
 		E2498FCF1BEE19B90027467F /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2498FCE1BEE19B90027467F /* LogInView.swift */; };
 		E2498FD11BEE19C70027467F /* LogInView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2498FD01BEE19C70027467F /* LogInView.xib */; };
 		E257E2621C26FDC8003A182A /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = E257E2611C26FDC8003A182A /* Location.swift */; };
-		E257E3051C2A9AE2003A182A /* SignUpAndLogInNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E257E3041C2A9AE2003A182A /* SignUpAndLogInNavigationBar.swift */; };
 		E257E3081C2A9E16003A182A /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E257E3071C2A9E16003A182A /* UIColor+Extension.swift */; };
 		E257E30A1C2A9E62003A182A /* UINavigaitonBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E257E3091C2A9E62003A182A /* UINavigaitonBar+Extension.swift */; };
 		E257E3231C2AB177003A182A /* chikudo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E257E3221C2AB177003A182A /* chikudo.jpg */; };
 		E257E3631C2B0012003A182A /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E257E3621C2B0012003A182A /* UIImageView+Extension.swift */; };
+		E257E3671C2B12A4003A182A /* Pocket_Guide-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E257E3661C2B12A4003A182A /* Pocket_Guide-logo.png */; };
 		E2706EB21C004A05007D75EF /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2706EB11C004A05007D75EF /* Question.swift */; };
 		E2D607E41BF462C300E15A7F /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D607E31BF462C300E15A7F /* CurrentUser.swift */; };
 		E2D607E61BF4685000E15A7F /* SelectSignUpOrLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D607E51BF4685000E15A7F /* SelectSignUpOrLogInViewController.swift */; };
@@ -76,11 +76,11 @@
 		E2498FCE1BEE19B90027467F /* LogInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		E2498FD01BEE19C70027467F /* LogInView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogInView.xib; sourceTree = "<group>"; };
 		E257E2611C26FDC8003A182A /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
-		E257E3041C2A9AE2003A182A /* SignUpAndLogInNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpAndLogInNavigationBar.swift; sourceTree = "<group>"; };
 		E257E3071C2A9E16003A182A /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		E257E3091C2A9E62003A182A /* UINavigaitonBar+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigaitonBar+Extension.swift"; sourceTree = "<group>"; };
 		E257E3221C2AB177003A182A /* chikudo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chikudo.jpg; sourceTree = "<group>"; };
 		E257E3621C2B0012003A182A /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		E257E3661C2B12A4003A182A /* Pocket_Guide-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pocket_Guide-logo.png"; sourceTree = "<group>"; };
 		E2706EB11C004A05007D75EF /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		E2D607E31BF462C300E15A7F /* CurrentUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = "<group>"; };
 		E2D607E51BF4685000E15A7F /* SelectSignUpOrLogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectSignUpOrLogInViewController.swift; sourceTree = "<group>"; };
@@ -187,6 +187,7 @@
 		E257E3211C2AAB14003A182A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				E257E3661C2B12A4003A182A /* Pocket_Guide-logo.png */,
 				E257E3221C2AB177003A182A /* chikudo.jpg */,
 			);
 			name = Images;
@@ -209,7 +210,6 @@
 				E2D607E51BF4685000E15A7F /* SelectSignUpOrLogInViewController.swift */,
 				E2D607E81BF4688000E15A7F /* SelectSignUpOrLogInView.swift */,
 				E2D607EA1BF4689300E15A7F /* SelectSignUpOrLogInView.xib */,
-				E257E3041C2A9AE2003A182A /* SignUpAndLogInNavigationBar.swift */,
 			);
 			name = SelectSignUpOrLogIn;
 			sourceTree = "<group>";
@@ -248,9 +248,8 @@
 		E2F3F5441BEDF37800F0E7B3 /* PocketGuide */ = {
 			isa = PBXGroup;
 			children = (
-				E257E3211C2AAB14003A182A /* Images */,
-				E257E3061C2A9D84003A182A /* Extension */,
 				E2F3F5491BEDF37800F0E7B3 /* Main.storyboard */,
+				E257E3061C2A9D84003A182A /* Extension */,
 				E2F3F57A1BEDF74900F0E7B3 /* Models */,
 				E2F738521C25763A004CC694 /* TourIndex */,
 				E2F738551C257676004CC694 /* Plan */,
@@ -258,6 +257,7 @@
 				E2D607E71BF4685600E15A7F /* SelectSignUpOrLogIn */,
 				E2498FC91BEE10880027467F /* Log in */,
 				E2F3F5731BEDF3D100F0E7B3 /* Sign Up */,
+				E257E3211C2AAB14003A182A /* Images */,
 				E2F3F5451BEDF37800F0E7B3 /* AppDelegate.swift */,
 				E2F3F54C1BEDF37800F0E7B3 /* Assets.xcassets */,
 				E2F3F54E1BEDF37800F0E7B3 /* LaunchScreen.storyboard */,
@@ -438,6 +438,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E257E3671C2B12A4003A182A /* Pocket_Guide-logo.png in Resources */,
 				E2F3F5791BEDF40B00F0E7B3 /* SignUpView.xib in Resources */,
 				E2F7385B1C2576B6004CC694 /* PlanView.xib in Resources */,
 				E2F3F5501BEDF37800F0E7B3 /* LaunchScreen.storyboard in Resources */,
@@ -546,7 +547,6 @@
 				E2EC68181C23BEBD00EC7706 /* QuestionManager.swift in Sources */,
 				E2F3F5771BEDF3FE00F0E7B3 /* SignUpView.swift in Sources */,
 				E257E3631C2B0012003A182A /* UIImageView+Extension.swift in Sources */,
-				E257E3051C2A9AE2003A182A /* SignUpAndLogInNavigationBar.swift in Sources */,
 				E2F3F5751BEDF3ED00F0E7B3 /* SignUpViewController.swift in Sources */,
 				E2EC68291C23F55900EC7706 /* QuestionTableViewCell.swift in Sources */,
 				E2F3F57C1BEDF75A00F0E7B3 /* User.swift in Sources */,
