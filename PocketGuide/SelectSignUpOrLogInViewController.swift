@@ -14,11 +14,12 @@ class SelectSignUpOrLogInViewController: UIViewController {
         super.loadView()
         let nib = UINib(nibName: "SelectSignUpOrLogInView", bundle: nil)
         view = nib.instantiateWithOwner(nil, options: nil).first as! UIView
-    }
-    
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        navigationController?.navigationBar.hidden = true
+//    }
+//    
+//    override func viewWillAppear(animated: Bool) {
+//        super.viewWillAppear(animated)
+//        navigationController?.navigationBar.hidden = true
+        navigationController?.navigationBar.setSignUpAndLogInNavigationBar()
     }
     
     override func viewDidLoad() {

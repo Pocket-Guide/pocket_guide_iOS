@@ -21,7 +21,8 @@ class SignUpViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.hidden = false
-        navigationController?.navigationBar.backgroundColor = UIColor.clearColor()
+        navigationController?.navigationBar.setSignUpAndLogInNavigationBar()
+        
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "<-", style: .Plain, target: self, action: "tapGoBackButton")
     }
     override func viewDidLoad() {
