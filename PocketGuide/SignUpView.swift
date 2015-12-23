@@ -20,6 +20,8 @@ class SignUpView: UIView {
     
     override func layoutSubviews() {
         super.layoutSubviews()
+        touristButton.hidden = true
+        guideButton.hidden = true
         backImageView.gradate()
         nameTextField.placeholder = "Your name"
         emailTextField.placeholder = "Your email address"
