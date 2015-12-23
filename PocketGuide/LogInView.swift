@@ -14,9 +14,11 @@ class LogInView: UIView {
     @IBOutlet weak var logInButton: UIButton!
     @IBOutlet weak var touristButton: UIButton!
     @IBOutlet weak var guideButton: UIButton!
+    @IBOutlet weak var backImageView: UIImageView!
     
     override func layoutSubviews() {
         super.layoutSubviews()
+        backImageView.gradate()
         emailTextField.placeholder = "Your email address"
         passwordTextField.placeholder = "Password"
         passwordTextField.secureTextEntry = true

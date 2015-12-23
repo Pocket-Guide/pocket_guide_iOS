@@ -12,7 +12,9 @@ class SelectSignUpOrLogInView: UIView {
 
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var logInButton: UIButton!
+    @IBOutlet weak var backImageView: UIImageView!
     
     override func layoutSubviews() {
+        backImageView.gradate()
     }
 }

@@ -16,8 +16,11 @@ class SignUpView: UIView {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var passwordConfirmationTextField: UITextField!
     @IBOutlet weak var signUpButton: UIButton!
+    @IBOutlet weak var backImageView: UIImageView!
+    
     override func layoutSubviews() {
         super.layoutSubviews()
+        backImageView.gradate()
         nameTextField.placeholder = "Your name"
         emailTextField.placeholder = "Your email address"
         passwordTextField.placeholder = "Password"
