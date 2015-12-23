@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -11,6 +11,9 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chikudo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="RdY-Wn-2Dl">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q9g-bi-2Yw">
                     <rect key="frame" x="71" y="184" width="48" height="30"/>
                     <state key="normal" title="Tourist"/>
@@ -49,6 +52,7 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <connections>
+                <outlet property="backImageView" destination="RdY-Wn-2Dl" id="Wdf-Fd-94C"/>
                 <outlet property="emailTextField" destination="ziR-ry-PAy" id="T7Q-JE-GL0"/>
                 <outlet property="guideButton" destination="0Yd-vR-1ww" id="AsU-9f-wfx"/>
                 <outlet property="logInButton" destination="ZTT-DL-jvf" id="3Ea-99-mtA"/>
@@ -58,4 +62,7 @@
             <point key="canvasLocation" x="244.5" y="354.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="chikudo.jpg" width="846" height="490"/>
+    </resources>
 </document>
