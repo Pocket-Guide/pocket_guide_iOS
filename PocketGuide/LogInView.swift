@@ -22,6 +22,9 @@ class LogInView: UIView {
         emailTextField.placeholder = "Your email address"
         passwordTextField.placeholder = "Password"
         passwordTextField.secureTextEntry = true
+        
+        touristButton.hidden = true
+        guideButton.hidden = true
     }
 
 }
