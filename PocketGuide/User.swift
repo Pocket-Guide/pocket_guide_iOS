@@ -19,8 +19,8 @@ class User: NSObject {
     var id: Int?
     var scope: String!
     
-    let ApplicationId = "a699288c4b34afcb23f36c4ca1fe4f371c424c336a75c1275ba0c159c6c48942"
-    let secretID = "2a0dc9d457707eb45247cb56d1509f3f810196f4f03878dfd1bd28822a91dc00"
+    let ApplicationId = "deb0c97b165a5d94d8ca850cd3bba7f5d707eb65189bf76218299e2971595f96"
+    let secretID = "d66827a8bbc03e922a863066ece18f39e8945c35df6ea1aecbc1d39d87b446b5"
     let getTokenURL = "http://localhost:3000/oauth/token.json"
     
     init(name: String, email: String, password: String, passwordConfirmation: String) {
