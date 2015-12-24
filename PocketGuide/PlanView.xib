@@ -11,22 +11,111 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jlp-bp-MNu">
-                    <rect key="frame" x="139" y="172" width="97" height="30"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OfO-j7-RXQ">
-                    <rect key="frame" x="170" y="329" width="34" height="30"/>
-                    <state key="normal" title="Start"/>
-                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chikudo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="yj9-Vb-Br6">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="9vO-tg-mrg">
+                    <rect key="frame" x="16" y="63" width="343" height="142"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="zsw-uP-Mar">
+                            <rect key="frame" x="0.0" y="0.0" width="343" height="94"/>
+                            <subviews>
+                                <view alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="469-I0-smD">
+                                    <rect key="frame" x="0.0" y="0.0" width="343" height="46"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="QEE-Nq-XTQ">
+                                            <rect key="frame" x="8" y="8" width="327" height="30"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trip.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ilk-7p-WML">
+                                                    <rect key="frame" x="0.0" y="5" width="20" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="20" id="2h1-I8-mAj"/>
+                                                        <constraint firstAttribute="height" constant="20" id="xzs-CS-0n7"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Plan Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jlp-bp-MNu">
+                                                    <rect key="frame" x="25" y="0.0" width="302" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="QEE-Nq-XTQ" secondAttribute="bottom" constant="8" id="B0h-S6-eEV"/>
+                                        <constraint firstAttribute="trailing" secondItem="QEE-Nq-XTQ" secondAttribute="trailing" constant="8" id="Bvj-Zd-QIr"/>
+                                        <constraint firstItem="QEE-Nq-XTQ" firstAttribute="top" secondItem="469-I0-smD" secondAttribute="top" constant="8" id="O2R-eS-A8d"/>
+                                        <constraint firstAttribute="height" constant="46" id="aSv-yh-hcv"/>
+                                        <constraint firstItem="QEE-Nq-XTQ" firstAttribute="leading" secondItem="469-I0-smD" secondAttribute="leading" constant="8" id="aXg-2x-0HA"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGB-yA-BCp">
+                                    <rect key="frame" x="0.0" y="48" width="343" height="46"/>
+                                    <color key="backgroundColor" red="0.99215692280000001" green="0.99607849120000003" blue="0.99607849120000003" alpha="1" colorSpace="deviceRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="46" id="Dyw-j4-4XU"/>
+                                    </constraints>
+                                    <state key="normal" title="destination">
+                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="dGB-yA-BCp" firstAttribute="leading" secondItem="zsw-uP-Mar" secondAttribute="leading" constant="16" id="Ue0-iC-cqc"/>
+                                <constraint firstAttribute="trailing" secondItem="dGB-yA-BCp" secondAttribute="trailing" constant="16" id="rwq-tJ-fnz"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="Ue0-iC-cqc"/>
+                                    <exclude reference="rwq-tJ-fnz"/>
+                                </mask>
+                            </variation>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OfO-j7-RXQ">
+                            <rect key="frame" x="0.0" y="96" width="343" height="46"/>
+                            <color key="backgroundColor" red="0.65490196079999996" green="0.8862745098" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="46" id="r3H-Qj-Tmm"/>
+                            </constraints>
+                            <state key="normal" title="Start">
+                                <color key="titleColor" red="0.99215692280000001" green="0.99607849120000003" blue="0.99607849120000003" alpha="1" colorSpace="deviceRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="142" id="8UT-IG-hzh"/>
+                        <constraint firstAttribute="height" constant="110" id="vSK-Ue-vkm"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="vSK-Ue-vkm"/>
+                        </mask>
+                    </variation>
+                </stackView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="9vO-tg-mrg" secondAttribute="trailing" constant="16" id="5XH-nu-Vvq"/>
+                <constraint firstItem="9vO-tg-mrg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="63" id="GOT-vM-8Xc"/>
+                <constraint firstItem="yj9-Vb-Br6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Gda-px-omN"/>
+                <constraint firstAttribute="trailing" secondItem="yj9-Vb-Br6" secondAttribute="trailing" id="H5y-DN-Eon"/>
+                <constraint firstAttribute="bottom" secondItem="yj9-Vb-Br6" secondAttribute="bottom" id="IsQ-me-Pyb"/>
+                <constraint firstItem="9vO-tg-mrg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="O3S-4P-itK"/>
+                <constraint firstItem="yj9-Vb-Br6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Wiw-y0-a8f"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <connections>
+                <outlet property="backImageView" destination="yj9-Vb-Br6" id="QbJ-YX-74Q"/>
+                <outlet property="destinationButton" destination="dGB-yA-BCp" id="XAL-5e-ij0"/>
                 <outlet property="startButton" destination="OfO-j7-RXQ" id="Awd-Yn-gJK"/>
                 <outlet property="textField" destination="Jlp-bp-MNu" id="OIs-BO-cxy"/>
             </connections>
+            <point key="canvasLocation" x="233.5" y="255.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="chikudo.jpg" width="846" height="490"/>
+        <image name="trip.png" width="254" height="225"/>
+    </resources>
 </document>
