@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     let currentUser = CurrentUser.sharedCurrentUser
     override func viewDidLoad() {
         super.viewDidLoad()
+//        User.removeOautToken()
     }
     
     override func viewWillAppear(animated: Bool) {

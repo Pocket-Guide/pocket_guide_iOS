@@ -41,6 +41,10 @@ class User: NSObject {
         Alamofire.request(.POST, signUpURL, parameters: parameters, encoding: .URL, headers: nil).response {
             (request, response, data, error) in
             if error == nil {
+                let json = JSON(data: data!)
+                print(json)
+                print(json["id"].int)
+                self.id = json["id"].int!
                 afterSignUp()
             }
         }
@@ -48,14 +52,16 @@ class User: NSObject {
     
     func logIn(URL: String, afterLogIn: () -> Void) {
         let parameters = ["grant_type": "password", "client_id": ApplicationId, "client_secret": secretID, "email": email, "scope": checkScopes(URL)]
+
         Alamofire.request(.POST, getTokenURL, parameters: parameters).response {
             (request, response, data, error) in
+            print("===================================")
             let json = JSON(data: data!)
             print(json)
             if let token = json["access_token"].string {
                 let headers = ["Authorization": "Bearer \(token)"]
                 Alamofire.request(.GET, URL, headers: headers, parameters: ["scope": self.checkScopes(URL)] ).response {
-                    (_, _, data, _) in
+                    (request, response, data, error) in
                     let json = JSON(data: data!)
                     print("===============UserData===================")
                     print(json)
@@ -89,7 +95,7 @@ class User: NSObject {
         userDefaults.synchronize()
     }
     
-    func removeOautToken() {
+    class func removeOautToken() {
         let userDefaults = NSUserDefaults.standardUserDefaults()
         userDefaults.removeObjectForKey("userData")
     }

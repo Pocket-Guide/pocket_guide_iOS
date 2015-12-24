@@ -23,12 +23,14 @@ class CurrentUser: NSObject {
         let userDefaults = NSUserDefaults.standardUserDefaults()
         let userData = userDefaults.dictionaryForKey("userData")
         if userData?["oauthToken"] == nil {
+            print(userData)
             return true
         } else {
             name = userData!["name"] as! String
             id = userData!["id"] as! Int
             scope = userData!["scope"] as! String
             oauthToken = userData!["oauthToken"] as? String
+            print(userData)
             return false
         }
     }

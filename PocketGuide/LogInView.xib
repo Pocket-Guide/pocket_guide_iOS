@@ -46,15 +46,15 @@
                                     <rect key="frame" x="8" y="8" width="327" height="30"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mail.png" translatesAutoresizingMaskIntoConstraints="NO" id="WXy-0w-Pcm">
-                                            <rect key="frame" x="0.0" y="3" width="25" height="25"/>
+                                            <rect key="frame" x="0.0" y="5" width="20" height="20"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="25" id="4lz-JC-Nym"/>
-                                                <constraint firstAttribute="width" constant="25" id="li7-ze-aVv"/>
+                                                <constraint firstAttribute="height" constant="20" id="4lz-JC-Nym"/>
+                                                <constraint firstAttribute="width" constant="20" id="li7-ze-aVv"/>
                                             </constraints>
                                         </imageView>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="@mail.com" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ziR-ry-PAy">
-                                            <rect key="frame" x="33" y="7" width="294" height="17"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="@mail.com" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ziR-ry-PAy">
+                                            <rect key="frame" x="28" y="5" width="299" height="20"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
                                     </subviews>
@@ -76,15 +76,15 @@
                                     <rect key="frame" x="8" y="8" width="327" height="30"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="password.png" translatesAutoresizingMaskIntoConstraints="NO" id="gvU-Ul-ukj">
-                                            <rect key="frame" x="0.0" y="3" width="25" height="25"/>
+                                            <rect key="frame" x="0.0" y="5" width="20" height="20"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="25" id="HXT-eA-pKG"/>
-                                                <constraint firstAttribute="width" constant="25" id="iwG-cD-Hbw"/>
+                                                <constraint firstAttribute="height" constant="20" id="HXT-eA-pKG"/>
+                                                <constraint firstAttribute="width" constant="20" id="iwG-cD-Hbw"/>
                                             </constraints>
                                         </imageView>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1qazxsw2" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lyE-Dr-L8P">
-                                            <rect key="frame" x="33" y="7" width="294" height="17"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <rect key="frame" x="28" y="5" width="299" height="20"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
                                     </subviews>
