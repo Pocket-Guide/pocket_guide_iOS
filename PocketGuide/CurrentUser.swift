@@ -27,7 +27,7 @@ class CurrentUser: NSObject {
         } else {
             name = userData!["name"] as! String
             id = userData!["id"] as! Int
-            scope = userData!["scopes"] as! String
+            scope = userData!["scope"] as! String
             oauthToken = userData!["oauthToken"] as? String
             return false
         }

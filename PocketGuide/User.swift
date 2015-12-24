@@ -17,7 +17,7 @@ class User: NSObject {
     var password: String
     var passwordConfirmation: String!
     var id: Int?
-    var scopes: String?
+    var scope: String!
     
     let ApplicationId = "a699288c4b34afcb23f36c4ca1fe4f371c424c336a75c1275ba0c159c6c48942"
     let secretID = "2a0dc9d457707eb45247cb56d1509f3f810196f4f03878dfd1bd28822a91dc00"
@@ -36,8 +36,8 @@ class User: NSObject {
     }
     
     func signUp(signUpURL: String, afterSignUp: () -> Void) {
-        scopes = checkScopes(signUpURL)
-        let parameters = ["email": email, "password": password, "password_confirmation": passwordConfirmation, "name": name, "scope": scopes]
+        scope = checkScopes(signUpURL)
+        let parameters = ["email": email, "password": password, "password_confirmation": passwordConfirmation, "name": name, "scope": scope]
         Alamofire.request(.POST, signUpURL, parameters: parameters, encoding: .URL, headers: nil).response {
             (request, response, data, error) in
             if error == nil {
@@ -55,8 +55,7 @@ class User: NSObject {
             if let token = json["access_token"].string {
                 let headers = ["Authorization": "Bearer \(token)"]
                 Alamofire.request(.GET, URL, headers: headers, parameters: ["scope": self.checkScopes(URL)] ).response {
-                    (request, response, data, error) in
-                    print(error)
+                    (_, _, data, _) in
                     let json = JSON(data: data!)
                     print("===============UserData===================")
                     print(json)
@@ -70,7 +69,7 @@ class User: NSObject {
     }
     
     func checkScopes(URL: String) -> String {
-        if URL.rangeOfString("current_tourist") != nil {
+        if URL.rangeOfString("tourist") != nil {
             return "tourist"
         } else {
             return "guide"
@@ -82,7 +81,7 @@ class User: NSObject {
         userData["oauthToken"] = token
         userData["name"] = name
         userData["id"] = id
-        userData["scopes"] = scopes
+        userData["scope"] = scope
         
         print(userData)
         let userDefaults = NSUserDefaults.standardUserDefaults()
