@@ -23,6 +23,7 @@
 		E257E36D1C2B232E003A182A /* mail.png in Resources */ = {isa = PBXBuildFile; fileRef = E257E36C1C2B232E003A182A /* mail.png */; };
 		E257E36F1C2B2391003A182A /* password.png in Resources */ = {isa = PBXBuildFile; fileRef = E257E36E1C2B2391003A182A /* password.png */; };
 		E2706EB21C004A05007D75EF /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2706EB11C004A05007D75EF /* Question.swift */; };
+		E280AFFB1C2C614200993529 /* trip.png in Resources */ = {isa = PBXBuildFile; fileRef = E280AFFA1C2C614200993529 /* trip.png */; };
 		E2D607E41BF462C300E15A7F /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D607E31BF462C300E15A7F /* CurrentUser.swift */; };
 		E2D607E61BF4685000E15A7F /* SelectSignUpOrLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D607E51BF4685000E15A7F /* SelectSignUpOrLogInViewController.swift */; };
 		E2D607E91BF4688000E15A7F /* SelectSignUpOrLogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D607E81BF4688000E15A7F /* SelectSignUpOrLogInView.swift */; };
@@ -88,6 +89,7 @@
 		E257E36C1C2B232E003A182A /* mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mail.png; sourceTree = "<group>"; };
 		E257E36E1C2B2391003A182A /* password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = password.png; sourceTree = "<group>"; };
 		E2706EB11C004A05007D75EF /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		E280AFFA1C2C614200993529 /* trip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trip.png; sourceTree = "<group>"; };
 		E2D607E31BF462C300E15A7F /* CurrentUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = "<group>"; };
 		E2D607E51BF4685000E15A7F /* SelectSignUpOrLogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectSignUpOrLogInViewController.swift; sourceTree = "<group>"; };
 		E2D607E81BF4688000E15A7F /* SelectSignUpOrLogInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectSignUpOrLogInView.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 		E257E3211C2AAB14003A182A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				E280AFFA1C2C614200993529 /* trip.png */,
 				E257E36E1C2B2391003A182A /* password.png */,
 				E257E36C1C2B232E003A182A /* mail.png */,
 				E257E36A1C2B2201003A182A /* name.png */,
@@ -455,6 +458,7 @@
 				E257E3231C2AB177003A182A /* chikudo.jpg in Resources */,
 				E2EC682A1C23F55900EC7706 /* QuestionTableViewCell.xib in Resources */,
 				E257E36D1C2B232E003A182A /* mail.png in Resources */,
+				E280AFFB1C2C614200993529 /* trip.png in Resources */,
 				E2498FD11BEE19C70027467F /* LogInView.xib in Resources */,
 				E2F3F54D1BEDF37800F0E7B3 /* Assets.xcassets in Resources */,
 				E257E36B1C2B2201003A182A /* name.png in Resources */,
