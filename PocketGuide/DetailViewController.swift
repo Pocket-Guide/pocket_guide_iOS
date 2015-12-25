@@ -10,6 +10,8 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
+    var recommend: Recommend!
+    
     override func loadView() {
         super.loadView()
         let nib = UINib(nibName: "DetailView", bundle: nil)
@@ -18,22 +20,29 @@ class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let detailView = view as! DetailView
+        detailView.detailTextView.text = recommend.introduction
+        detailView.titleLabel.text = recommend.name
+        let imageURL = NSURL(string: recommend.captureImage)
+        let request = NSURLRequest(URL: imageURL!)
+        NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) { (Response, data, error) -> Void in
+            let image = UIImage(data: data!)
+            detailView.detailImageView.image = image
+        }
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        
         let detailView = view as! DetailView
         detailView.favoriteButton.addTarget(self, action: "tapFavoriteButton", forControlEvents: .TouchUpInside)
+        navigationController?.navigationBar.hidden = false
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
     func tapFavoriteButton() {
-        let userDefaults = NSUserDefaults.standardUserDefaults()
-        dismissViewControllerAnimated(true, completion: nil)
     }
 }

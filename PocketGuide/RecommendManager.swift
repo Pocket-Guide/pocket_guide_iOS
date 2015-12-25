@@ -47,7 +47,6 @@ class RecommendManager: NSObject, UITableViewDataSource {
         NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) { (Response, data, error) -> Void in
             let image = UIImage(data: data!)
             cell.cellImage.image = image
-            print(cell.cellImage.image)
         }
         return cell
     }

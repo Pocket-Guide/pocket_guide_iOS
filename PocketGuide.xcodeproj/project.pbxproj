@@ -261,7 +261,6 @@
 				E2EC682B1C23F56E00EC7706 /* QuestionView.swift */,
 				E2EC68311C23F5A500EC7706 /* QuestionView.xib */,
 				E2EC68331C23F67F00EC7706 /* QuestionTableViewCell */,
-				E280AFFC1C2CEA4200993529 /* Recommend */,
 			);
 			name = Question;
 			sourceTree = "<group>";
@@ -342,6 +341,7 @@
 				E2F738521C25763A004CC694 /* TourIndex */,
 				E2F738551C257676004CC694 /* Plan */,
 				E2A948F71BFC61DA00986257 /* Question */,
+				E280AFFC1C2CEA4200993529 /* Recommend */,
 				E2B3A77D1C2D1A020062CE6F /* Detail */,
 				E2D607E71BF4685600E15A7F /* SelectSignUpOrLogIn */,
 				E2498FC91BEE10880027467F /* Log in */,

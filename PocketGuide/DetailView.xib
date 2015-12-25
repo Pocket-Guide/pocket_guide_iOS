@@ -72,6 +72,7 @@
                 <outlet property="detailImageView" destination="cNR-bd-mwa" id="mIB-vM-U55"/>
                 <outlet property="detailTextView" destination="MYe-fw-rhA" id="LZM-9g-EcS"/>
                 <outlet property="favoriteButton" destination="1Ta-50-cEF" id="tFR-dE-HF9"/>
+                <outlet property="titleLabel" destination="37S-Hj-P6I" id="jUs-Ik-Taf"/>
             </connections>
             <point key="canvasLocation" x="244.5" y="226.5"/>
         </view>

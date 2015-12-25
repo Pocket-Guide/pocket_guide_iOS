@@ -10,10 +10,8 @@
 import UIKit
 
 class DetailView: UIView {
-
     @IBOutlet weak var detailImageView: UIImageView!
-
     @IBOutlet weak var detailTextView: UITextView!
-
     @IBOutlet weak var favoriteButton: UIButton!
+    @IBOutlet weak var titleLabel: UILabel!
 }
