@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RecommendViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class RecommendViewController: UIViewController, UITableViewDelegate {
     let answerManager = AnswerManager.sharedAnswerManager
     let recommendManager = RecommendManager.sharedRecommendManager
     let currentUser = CurrentUser.sharedCurrentUser
@@ -23,47 +23,39 @@ class RecommendViewController: UIViewController, UITableViewDelegate, UITableVie
         super.viewDidLoad()
         let recommendView = view as! RecommendView
         recommendView.recommendTableView.delegate = self
-        recommendView.recommendTableView.dataSource = self
+        recommendView.recommendTableView.dataSource = recommendManager
+        recommendView.closeButton.addTarget(self, action: "close", forControlEvents: .TouchUpInside)
+        recommendManager.getRecommend(currentUser.oauthToken!, planID: answerManager.planID) { () -> Void in
+            recommendView.recommendTableView.reloadData()
+        }
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Close", style: .Plain, target: self, action: "close")
-        let planID = answerManager.planID
-        recommendManager.getQuestion(currentUser.oauthToken!, planID: answerManager.planID) { () -> Void in
-            print("hello")
-        }
+        navigationController?.navigationBar.hidden = true
     }
     
-    
-    
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("RecommendTableViewCell", forIndexPath: indexPath) as! RecommendTableViewCell
-        print(cell.cellImage.frame)
-        
-        return cell
-    }
-    
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-    }
-    
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 100
-    }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         performSegueWithIdentifier("ShowDetailViewController", sender: nil)
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let navigationController = segue.destinationViewController as! UINavigationController
+        let DetailViewController = navigationController.
+    }
+    
     func close() {
         dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 100
     }
 
 }

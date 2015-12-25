@@ -24,8 +24,8 @@ class AnswerManager: NSObject {
     
     func addAnswerToAttributes(choice: Choice, index: Int) {
         var answer = [String:Int]()
-        answer["question_id"] = choice.id
-        answer["choice_id"] = choice.questionID
+        answer["question_id"] = choice.questionID
+        answer["choice_id"] = choice.id
         answersAttributes.append(answer)
         print(answersAttributes[index])
     }
