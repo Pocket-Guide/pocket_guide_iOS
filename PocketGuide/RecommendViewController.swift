@@ -9,6 +9,9 @@
 import UIKit
 
 class RecommendViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    let answerManager = AnswerManager.sharedAnswerManager
+    let recommendManager = RecommendManager.sharedRecommendManager
+    let currentUser = CurrentUser.sharedCurrentUser
     
     override func loadView() {
         super.loadView()
@@ -26,7 +29,13 @@ class RecommendViewController: UIViewController, UITableViewDelegate, UITableVie
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Close", style: .Plain, target: self, action: "close")
+        let planID = answerManager.planID
+        recommendManager.getQuestion(currentUser.oauthToken!, planID: answerManager.planID) { () -> Void in
+            print("hello")
+        }
     }
+    
+    
     
 
     override func didReceiveMemoryWarning() {
@@ -54,7 +63,6 @@ class RecommendViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func close() {
-        
         dismissViewControllerAnimated(true, completion: nil)
     }
 

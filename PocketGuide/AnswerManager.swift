@@ -16,6 +16,7 @@ class AnswerManager: NSObject {
     var answersAttributes = [[String:Int]()]
     var plan: Plan!
     var choices = [String:Int]()
+    var planID: Int!
     
     func makePlan(title: String, prefectureCode:Int) {
         plan = Plan(title: title, prefectureCode: prefectureCode)
@@ -45,6 +46,8 @@ class AnswerManager: NSObject {
             print(error)
             let json = JSON(data: data!)
             print(json)
+            //idを取る
+            self.planID = json["id"].int
             callback()
         }
     }

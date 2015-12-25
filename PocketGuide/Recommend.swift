@@ -14,6 +14,10 @@ class Recommend: NSObject, UITableViewDataSource {
     var content: String?
     var image: UIImage?
     
+    func getRecommends() {
+        
+    }
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("RecommendTableViewCell", forIndexPath: indexPath)
         return cell

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8A6F7F313D35E9E780E973E8 /* Pods_PocketGuide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61097D7A896CB74DCCB851C0 /* Pods_PocketGuide.framework */; };
+		E200CDCB1C2D7BCE00DF195F /* RecommendManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E200CDCA1C2D7BCE00DF195F /* RecommendManager.swift */; };
 		E2026E001BEDF8D9000F8FBF /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2026DFE1BEDF8D9000F8FBF /* Alamofire.framework */; };
 		E2026E011BEDF8D9000F8FBF /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2026DFF1BEDF8D9000F8FBF /* SwiftyJSON.framework */; };
 		E2498FCD1BEE19A80027467F /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2498FCC1BEE19A80027467F /* LogInViewController.swift */; };
@@ -91,6 +92,7 @@
 		0A7788EE59000AE719B71F93 /* Pods-PocketGuide.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketGuide.release.xcconfig"; path = "Pods/Target Support Files/Pods-PocketGuide/Pods-PocketGuide.release.xcconfig"; sourceTree = "<group>"; };
 		61097D7A896CB74DCCB851C0 /* Pods_PocketGuide.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PocketGuide.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF17B35C1AD22AAC7F88FF3F /* Pods-PocketGuide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketGuide.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PocketGuide/Pods-PocketGuide.debug.xcconfig"; sourceTree = "<group>"; };
+		E200CDCA1C2D7BCE00DF195F /* RecommendManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendManager.swift; sourceTree = "<group>"; };
 		E2026DFE1BEDF8D9000F8FBF /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		E2026DFF1BEDF8D9000F8FBF /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		E2498FCC1BEE19A80027467F /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
@@ -395,6 +397,7 @@
 				E257E2611C26FDC8003A182A /* Location.swift */,
 				E2F7384E1C2575AF004CC694 /* AnswerManager.swift */,
 				E2B3A7671C2CEFC70062CE6F /* Recommend.swift */,
+				E200CDCA1C2D7BCE00DF195F /* RecommendManager.swift */,
 				E2B3A7841C2D266D0062CE6F /* RecommendStocks.swift */,
 			);
 			name = Models;
@@ -655,6 +658,7 @@
 				E2B3A78C1C2D29D70062CE6F /* TourIndexTableViewCell.swift in Sources */,
 				E2EC68181C23BEBD00EC7706 /* QuestionManager.swift in Sources */,
 				E2B3A7851C2D266D0062CE6F /* RecommendStocks.swift in Sources */,
+				E200CDCB1C2D7BCE00DF195F /* RecommendManager.swift in Sources */,
 				E2B3A7871C2D298D0062CE6F /* TourIndexView.swift in Sources */,
 				E2F3F5771BEDF3FE00F0E7B3 /* SignUpView.swift in Sources */,
 				E2B3A7781C2D08D20062CE6F /* RecommendViewController.swift in Sources */,
