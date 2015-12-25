@@ -24,6 +24,23 @@
 		E257E36F1C2B2391003A182A /* password.png in Resources */ = {isa = PBXBuildFile; fileRef = E257E36E1C2B2391003A182A /* password.png */; };
 		E2706EB21C004A05007D75EF /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2706EB11C004A05007D75EF /* Question.swift */; };
 		E280AFFB1C2C614200993529 /* trip.png in Resources */ = {isa = PBXBuildFile; fileRef = E280AFFA1C2C614200993529 /* trip.png */; };
+		E2B3A7681C2CEFC70062CE6F /* Recommend.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B3A7671C2CEFC70062CE6F /* Recommend.swift */; };
+		E2B3A76E1C2CFA8E0062CE6F /* RecommendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B3A76C1C2CFA8E0062CE6F /* RecommendTableViewCell.swift */; };
+		E2B3A76F1C2CFA8E0062CE6F /* RecommendTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2B3A76D1C2CFA8E0062CE6F /* RecommendTableViewCell.xib */; };
+		E2B3A7741C2CFE890062CE6F /* tachkawa_station.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E2B3A7711C2CFE890062CE6F /* tachkawa_station.jpg */; };
+		E2B3A7751C2CFE890062CE6F /* tokyo_ravens.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E2B3A7721C2CFE890062CE6F /* tokyo_ravens.jpg */; };
+		E2B3A7761C2CFE890062CE6F /* tokyo_station.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E2B3A7731C2CFE890062CE6F /* tokyo_station.jpg */; };
+		E2B3A7781C2D08D20062CE6F /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B3A7771C2D08D20062CE6F /* RecommendViewController.swift */; };
+		E2B3A77A1C2D09070062CE6F /* RecommendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B3A7791C2D09070062CE6F /* RecommendView.swift */; };
+		E2B3A77C1C2D09190062CE6F /* RecommendView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2B3A77B1C2D09190062CE6F /* RecommendView.xib */; };
+		E2B3A77F1C2D1A130062CE6F /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2B3A77E1C2D1A130062CE6F /* DetailView.xib */; };
+		E2B3A7811C2D1A7A0062CE6F /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B3A7801C2D1A7A0062CE6F /* DetailView.swift */; };
+		E2B3A7831C2D1A9A0062CE6F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B3A7821C2D1A9A0062CE6F /* DetailViewController.swift */; };
+		E2B3A7851C2D266D0062CE6F /* RecommendStocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B3A7841C2D266D0062CE6F /* RecommendStocks.swift */; };
+		E2B3A7871C2D298D0062CE6F /* TourIndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B3A7861C2D298D0062CE6F /* TourIndexView.swift */; };
+		E2B3A7891C2D299E0062CE6F /* TourIndexView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2B3A7881C2D299E0062CE6F /* TourIndexView.xib */; };
+		E2B3A78C1C2D29D70062CE6F /* TourIndexTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B3A78A1C2D29D70062CE6F /* TourIndexTableViewCell.swift */; };
+		E2B3A78D1C2D29D70062CE6F /* TourIndexTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2B3A78B1C2D29D70062CE6F /* TourIndexTableViewCell.xib */; };
 		E2D607E41BF462C300E15A7F /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D607E31BF462C300E15A7F /* CurrentUser.swift */; };
 		E2D607E61BF4685000E15A7F /* SelectSignUpOrLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D607E51BF4685000E15A7F /* SelectSignUpOrLogInViewController.swift */; };
 		E2D607E91BF4688000E15A7F /* SelectSignUpOrLogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D607E81BF4688000E15A7F /* SelectSignUpOrLogInView.swift */; };
@@ -90,6 +107,23 @@
 		E257E36E1C2B2391003A182A /* password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = password.png; sourceTree = "<group>"; };
 		E2706EB11C004A05007D75EF /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		E280AFFA1C2C614200993529 /* trip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trip.png; sourceTree = "<group>"; };
+		E2B3A7671C2CEFC70062CE6F /* Recommend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recommend.swift; sourceTree = "<group>"; };
+		E2B3A76C1C2CFA8E0062CE6F /* RecommendTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendTableViewCell.swift; sourceTree = "<group>"; };
+		E2B3A76D1C2CFA8E0062CE6F /* RecommendTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendTableViewCell.xib; sourceTree = "<group>"; };
+		E2B3A7711C2CFE890062CE6F /* tachkawa_station.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tachkawa_station.jpg; sourceTree = "<group>"; };
+		E2B3A7721C2CFE890062CE6F /* tokyo_ravens.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tokyo_ravens.jpg; sourceTree = "<group>"; };
+		E2B3A7731C2CFE890062CE6F /* tokyo_station.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tokyo_station.jpg; sourceTree = "<group>"; };
+		E2B3A7771C2D08D20062CE6F /* RecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
+		E2B3A7791C2D09070062CE6F /* RecommendView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendView.swift; sourceTree = "<group>"; };
+		E2B3A77B1C2D09190062CE6F /* RecommendView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendView.xib; sourceTree = "<group>"; };
+		E2B3A77E1C2D1A130062CE6F /* DetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
+		E2B3A7801C2D1A7A0062CE6F /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		E2B3A7821C2D1A9A0062CE6F /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E2B3A7841C2D266D0062CE6F /* RecommendStocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendStocks.swift; sourceTree = "<group>"; };
+		E2B3A7861C2D298D0062CE6F /* TourIndexView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TourIndexView.swift; sourceTree = "<group>"; };
+		E2B3A7881C2D299E0062CE6F /* TourIndexView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TourIndexView.xib; sourceTree = "<group>"; };
+		E2B3A78A1C2D29D70062CE6F /* TourIndexTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TourIndexTableViewCell.swift; sourceTree = "<group>"; };
+		E2B3A78B1C2D29D70062CE6F /* TourIndexTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TourIndexTableViewCell.xib; sourceTree = "<group>"; };
 		E2D607E31BF462C300E15A7F /* CurrentUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = "<group>"; };
 		E2D607E51BF4685000E15A7F /* SelectSignUpOrLogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectSignUpOrLogInViewController.swift; sourceTree = "<group>"; };
 		E2D607E81BF4688000E15A7F /* SelectSignUpOrLogInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectSignUpOrLogInView.swift; sourceTree = "<group>"; };
@@ -195,6 +229,10 @@
 		E257E3211C2AAB14003A182A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				E2B3A7711C2CFE890062CE6F /* tachkawa_station.jpg */,
+				E2B3A7721C2CFE890062CE6F /* tokyo_ravens.jpg */,
+				E2B3A7731C2CFE890062CE6F /* tokyo_station.jpg */,
+				E2B3A7701C2CFE5A0062CE6F /* CellImage */,
 				E280AFFA1C2C614200993529 /* trip.png */,
 				E257E36E1C2B2391003A182A /* password.png */,
 				E257E36C1C2B232E003A182A /* mail.png */,
@@ -205,6 +243,17 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
+		E280AFFC1C2CEA4200993529 /* Recommend */ = {
+			isa = PBXGroup;
+			children = (
+				E2B3A7691C2CFA280062CE6F /* RecommendTableViewCell */,
+				E2B3A7771C2D08D20062CE6F /* RecommendViewController.swift */,
+				E2B3A7791C2D09070062CE6F /* RecommendView.swift */,
+				E2B3A77B1C2D09190062CE6F /* RecommendView.xib */,
+			);
+			name = Recommend;
+			sourceTree = "<group>";
+		};
 		E2A948F71BFC61DA00986257 /* Question */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,8 +261,35 @@
 				E2EC682B1C23F56E00EC7706 /* QuestionView.swift */,
 				E2EC68311C23F5A500EC7706 /* QuestionView.xib */,
 				E2EC68331C23F67F00EC7706 /* QuestionTableViewCell */,
+				E280AFFC1C2CEA4200993529 /* Recommend */,
 			);
 			name = Question;
+			sourceTree = "<group>";
+		};
+		E2B3A7691C2CFA280062CE6F /* RecommendTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E2B3A76C1C2CFA8E0062CE6F /* RecommendTableViewCell.swift */,
+				E2B3A76D1C2CFA8E0062CE6F /* RecommendTableViewCell.xib */,
+			);
+			name = RecommendTableViewCell;
+			sourceTree = "<group>";
+		};
+		E2B3A7701C2CFE5A0062CE6F /* CellImage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CellImage;
+			sourceTree = "<group>";
+		};
+		E2B3A77D1C2D1A020062CE6F /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				E2B3A7821C2D1A9A0062CE6F /* DetailViewController.swift */,
+				E2B3A77E1C2D1A130062CE6F /* DetailView.xib */,
+				E2B3A7801C2D1A7A0062CE6F /* DetailView.swift */,
+			);
+			name = Detail;
 			sourceTree = "<group>";
 		};
 		E2D607E71BF4685600E15A7F /* SelectSignUpOrLogIn */ = {
@@ -266,6 +342,7 @@
 				E2F738521C25763A004CC694 /* TourIndex */,
 				E2F738551C257676004CC694 /* Plan */,
 				E2A948F71BFC61DA00986257 /* Question */,
+				E2B3A77D1C2D1A020062CE6F /* Detail */,
 				E2D607E71BF4685600E15A7F /* SelectSignUpOrLogIn */,
 				E2498FC91BEE10880027467F /* Log in */,
 				E2F3F5731BEDF3D100F0E7B3 /* Sign Up */,
@@ -317,6 +394,8 @@
 				E2EC68151C23BEA200EC7706 /* Choice.swift */,
 				E257E2611C26FDC8003A182A /* Location.swift */,
 				E2F7384E1C2575AF004CC694 /* AnswerManager.swift */,
+				E2B3A7671C2CEFC70062CE6F /* Recommend.swift */,
+				E2B3A7841C2D266D0062CE6F /* RecommendStocks.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -325,6 +404,10 @@
 			isa = PBXGroup;
 			children = (
 				E2F738531C257657004CC694 /* ViewController.swift */,
+				E2B3A7861C2D298D0062CE6F /* TourIndexView.swift */,
+				E2B3A7881C2D299E0062CE6F /* TourIndexView.xib */,
+				E2B3A78A1C2D29D70062CE6F /* TourIndexTableViewCell.swift */,
+				E2B3A78B1C2D29D70062CE6F /* TourIndexTableViewCell.xib */,
 			);
 			name = TourIndex;
 			sourceTree = "<group>";
@@ -451,9 +534,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E257E3671C2B12A4003A182A /* Pocket_Guide-logo.png in Resources */,
+				E2B3A78D1C2D29D70062CE6F /* TourIndexTableViewCell.xib in Resources */,
 				E2F3F5791BEDF40B00F0E7B3 /* SignUpView.xib in Resources */,
+				E2B3A7751C2CFE890062CE6F /* tokyo_ravens.jpg in Resources */,
 				E2F7385B1C2576B6004CC694 /* PlanView.xib in Resources */,
 				E2F3F5501BEDF37800F0E7B3 /* LaunchScreen.storyboard in Resources */,
+				E2B3A7741C2CFE890062CE6F /* tachkawa_station.jpg in Resources */,
+				E2B3A77F1C2D1A130062CE6F /* DetailView.xib in Resources */,
 				E257E36F1C2B2391003A182A /* password.png in Resources */,
 				E257E3231C2AB177003A182A /* chikudo.jpg in Resources */,
 				E2EC682A1C23F55900EC7706 /* QuestionTableViewCell.xib in Resources */,
@@ -464,7 +551,11 @@
 				E257E36B1C2B2201003A182A /* name.png in Resources */,
 				E2D607EB1BF4689300E15A7F /* SelectSignUpOrLogInView.xib in Resources */,
 				E2EC68321C23F5A500EC7706 /* QuestionView.xib in Resources */,
+				E2B3A7761C2CFE890062CE6F /* tokyo_station.jpg in Resources */,
 				E2F3F54B1BEDF37800F0E7B3 /* Main.storyboard in Resources */,
+				E2B3A7891C2D299E0062CE6F /* TourIndexView.xib in Resources */,
+				E2B3A76F1C2CFA8E0062CE6F /* RecommendTableViewCell.xib in Resources */,
+				E2B3A77C1C2D09190062CE6F /* RecommendView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -560,22 +651,31 @@
 				E257E30A1C2A9E62003A182A /* UINavigaitonBar+Extension.swift in Sources */,
 				E2F738541C257657004CC694 /* ViewController.swift in Sources */,
 				E2F7384F1C2575AF004CC694 /* AnswerManager.swift in Sources */,
+				E2B3A76E1C2CFA8E0062CE6F /* RecommendTableViewCell.swift in Sources */,
+				E2B3A78C1C2D29D70062CE6F /* TourIndexTableViewCell.swift in Sources */,
 				E2EC68181C23BEBD00EC7706 /* QuestionManager.swift in Sources */,
+				E2B3A7851C2D266D0062CE6F /* RecommendStocks.swift in Sources */,
+				E2B3A7871C2D298D0062CE6F /* TourIndexView.swift in Sources */,
 				E2F3F5771BEDF3FE00F0E7B3 /* SignUpView.swift in Sources */,
+				E2B3A7781C2D08D20062CE6F /* RecommendViewController.swift in Sources */,
 				E257E3631C2B0012003A182A /* UIImageView+Extension.swift in Sources */,
 				E2F3F5751BEDF3ED00F0E7B3 /* SignUpViewController.swift in Sources */,
 				E2EC68291C23F55900EC7706 /* QuestionTableViewCell.swift in Sources */,
+				E2B3A7811C2D1A7A0062CE6F /* DetailView.swift in Sources */,
 				E2F3F57C1BEDF75A00F0E7B3 /* User.swift in Sources */,
 				E2D607E41BF462C300E15A7F /* CurrentUser.swift in Sources */,
 				E257E2621C26FDC8003A182A /* Location.swift in Sources */,
 				E2EC68161C23BEA200EC7706 /* Choice.swift in Sources */,
 				E2F738571C257687004CC694 /* PlanViewController.swift in Sources */,
+				E2B3A7681C2CEFC70062CE6F /* Recommend.swift in Sources */,
 				E257E3081C2A9E16003A182A /* UIColor+Extension.swift in Sources */,
 				E2F3F5461BEDF37800F0E7B3 /* AppDelegate.swift in Sources */,
 				E2D607E61BF4685000E15A7F /* SelectSignUpOrLogInViewController.swift in Sources */,
 				E2706EB21C004A05007D75EF /* Question.swift in Sources */,
 				E2D607E91BF4688000E15A7F /* SelectSignUpOrLogInView.swift in Sources */,
+				E2B3A7831C2D1A9A0062CE6F /* DetailViewController.swift in Sources */,
 				E2F738591C25769D004CC694 /* PlanView.swift in Sources */,
+				E2B3A77A1C2D09070062CE6F /* RecommendView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

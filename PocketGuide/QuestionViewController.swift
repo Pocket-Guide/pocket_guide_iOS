@@ -82,8 +82,9 @@ class QuestionViewController: UIViewController, UITableViewDelegate {
         if questionManager.presentQuesiton == questionManager.questions.count - 1 {
             print("post")
             answerManager.addAnswerToAttributes(selectedChoice, index: questionManager.presentQuesiton)
-            answerManager.savePlanAndAnswer()
-            dismissViewControllerAnimated(true, completion: nil)
+            answerManager.savePlanAndAnswer({ () -> Void in
+                self.performSegueWithIdentifier("ShowRecommendViewController", sender: nil)
+            })
         } else if questionManager.presentQuesiton == questionManager.questions.count - 2 {
             answerManager.addAnswerToAttributes(selectedChoice, index: questionManager.presentQuesiton)
             navigationItem.rightBarButtonItem?.title = "Post"

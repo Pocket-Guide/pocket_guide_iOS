@@ -17,8 +17,8 @@ class AnswerManager: NSObject {
     var plan: Plan!
     var choices = [String:Int]()
     
-    func makePlan(title: String) {
-        plan = Plan(title: title)
+    func makePlan(title: String, prefectureCode:Int) {
+        plan = Plan(title: title, prefectureCode: prefectureCode)
     }
     
     func addAnswerToAttributes(choice: Choice, index: Int) {
@@ -29,18 +29,23 @@ class AnswerManager: NSObject {
         print(answersAttributes[index])
     }
     
-    func savePlanAndAnswer() {
+    func savePlanAndAnswer(callback: () -> Void) {
         let URL = "http://localhost:3000/current_tourist/me/plans"
         let headers = ["Authorization": "Bearer \(currentUser.oauthToken!)"]
+        
         var parameters = [String:AnyObject]()
         parameters["title"] = plan.title
+        parameters["prefecture"] = plan.prefecture
+        print(plan.prefecture)
         parameters["answers_attributes"] = answersAttributes
+        print(parameters)
         
         Alamofire.request(.POST, URL, headers: headers, parameters: parameters).response {
             (request, response, data, error) in
             print(error)
             let json = JSON(data: data!)
             print(json)
+            callback()
         }
     }
 }

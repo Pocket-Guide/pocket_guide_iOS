@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DetailView" customModule="PocketGuide" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tokyo Station" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37S-Hj-P6I">
+                    <rect key="frame" x="16" y="308" width="343" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="bKi-uc-yyG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MYe-fw-rhA">
+                    <rect key="frame" x="16" y="356" width="343" height="150"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="GbH-tE-rw6"/>
+                        <constraint firstAttribute="width" constant="300" id="TyS-ac-4ip"/>
+                    </constraints>
+                    <string key="text">「ラブライブ!」10話に出てきた合宿前の集合場所になります。
+場所は東京駅の丸の内北口でそこをでて少し歩いたところには「Snow halation」の舞台もあります。
+人が多く行き交う場所なので撮影する場合は十分に配慮して下さい。</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="TyS-ac-4ip"/>
+                        </mask>
+                    </variation>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ta-50-cEF">
+                    <rect key="frame" x="16" y="522" width="343" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="jV4-cz-QnZ"/>
+                    </constraints>
+                    <state key="normal" title="行きたい"/>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tokyo_station.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cNR-bd-mwa">
+                    <rect key="frame" x="37" y="0.0" width="300" height="300"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="7Mm-s1-QOr"/>
+                        <constraint firstAttribute="width" constant="300" id="EoJ-eb-bnS"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="MYe-fw-rhA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="7kB-qY-N87"/>
+                <constraint firstItem="cNR-bd-mwa" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="GhM-mi-azd"/>
+                <constraint firstItem="37S-Hj-P6I" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="X9Z-gV-Dzr"/>
+                <constraint firstAttribute="trailing" secondItem="37S-Hj-P6I" secondAttribute="trailing" constant="16" id="ajK-10-ghe"/>
+                <constraint firstAttribute="trailing" secondItem="1Ta-50-cEF" secondAttribute="trailing" constant="16" id="dZY-7m-IgP"/>
+                <constraint firstItem="1Ta-50-cEF" firstAttribute="top" secondItem="MYe-fw-rhA" secondAttribute="bottom" constant="16" id="dhB-Vh-ASE"/>
+                <constraint firstItem="MYe-fw-rhA" firstAttribute="top" secondItem="37S-Hj-P6I" secondAttribute="bottom" constant="8" id="i8k-s5-GdS"/>
+                <constraint firstItem="37S-Hj-P6I" firstAttribute="top" secondItem="cNR-bd-mwa" secondAttribute="bottom" constant="8" id="kGc-2d-lkN"/>
+                <constraint firstAttribute="trailing" secondItem="MYe-fw-rhA" secondAttribute="trailing" constant="16" id="kY5-TW-nW0"/>
+                <constraint firstItem="cNR-bd-mwa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="kw7-2G-gQj"/>
+                <constraint firstItem="1Ta-50-cEF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="tD4-Fk-626"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <connections>
+                <outlet property="detailImageView" destination="cNR-bd-mwa" id="mIB-vM-U55"/>
+                <outlet property="detailTextView" destination="MYe-fw-rhA" id="LZM-9g-EcS"/>
+                <outlet property="favoriteButton" destination="1Ta-50-cEF" id="tFR-dE-HF9"/>
+            </connections>
+            <point key="canvasLocation" x="244.5" y="226.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="tokyo_station.jpg" width="640" height="360"/>
+    </resources>
+</document>

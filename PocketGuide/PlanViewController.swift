@@ -13,6 +13,8 @@ class PlanViewController: UIViewController, UIPickerViewDelegate {
     let answerManager = AnswerManager.sharedAnswerManager
     let location = Location()
     
+    var prefectureCoed: Int!
+    
     let backView = UIView()
     let prefecturePickerView = UIPickerView()
     
@@ -44,6 +46,7 @@ class PlanViewController: UIViewController, UIPickerViewDelegate {
     
     //PickerView関連
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        prefectureCoed = row
         return location.prefectures[row]
     }
     
@@ -66,7 +69,7 @@ class PlanViewController: UIViewController, UIPickerViewDelegate {
     func tapStartButton() {
         let planView = view as! PlanView
         title = planView.textField.text
-        answerManager.makePlan(title!)
+        answerManager.makePlan(title!, prefectureCode: prefectureCoed)
         performSegueWithIdentifier("ShowQuestionViewController", sender: nil)
     }
     

@@ -131,10 +131,54 @@
                     </view>
                     <navigationItem key="navigationItem" id="c17-sJ-uYc"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="5lA-vl-1Uf" kind="show" identifier="ShowRecommendViewController" id="Kjj-wW-SRU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uEl-eS-8lj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1381.5" y="1899.5"/>
+        </scene>
+        <!--Recommend View Controller-->
+        <scene sceneID="69Q-6Q-5w6">
+            <objects>
+                <viewController id="5lA-vl-1Uf" customClass="RecommendViewController" customModule="PocketGuide" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ApU-uh-SeX"/>
+                        <viewControllerLayoutGuide type="bottom" id="WCz-6r-WVh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="a8H-wT-mpx">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="8fR-6D-Gn9" kind="show" identifier="ShowDetailViewController" id="ABz-FE-jIf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g7v-2d-UEz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1846.5" y="1899.5"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="rtR-4B-5ux">
+            <objects>
+                <viewController id="8fR-6D-Gn9" customClass="DetailViewController" customModule="PocketGuide" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZjU-Ew-L1c"/>
+                        <viewControllerLayoutGuide type="bottom" id="v0l-gV-opf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RjN-Ht-iuW">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eX4-Xf-gHd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2332.5" y="1899.5"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Ws9-jr-ys5">
@@ -145,6 +189,7 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="Rfu-fh-3pm">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.45882352939999999" green="0.6588235294" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="Gu4-mQ-0b2" kind="relationship" relationship="viewControllers" id="J93-pp-i4o"/>
@@ -164,6 +209,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.45882352939999999" green="0.6588235294" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -183,6 +229,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.45882352939999999" green="0.6588235294" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

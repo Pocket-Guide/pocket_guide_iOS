@@ -11,8 +11,10 @@ import UIKit
 
 class Plan: NSObject {
     var title: String!
+    var prefecture = 0
     
-    init(title: String) {
+    init(title: String, prefectureCode: Int) {
         self.title = title
+        self.prefecture = prefectureCode
     }
 }
