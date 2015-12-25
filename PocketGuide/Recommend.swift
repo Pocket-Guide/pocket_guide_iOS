@@ -8,23 +8,11 @@
 
 import UIKit
 
-class Recommend: NSObject, UITableViewDataSource {
-    var recommends = []
-    var title: String?
-    var content: String?
-    var image: UIImage?
+class Recommend: NSObject {
+    var status: Int!
+    var id: Int!
+    var introduction: String!
+    var name: String!
+    var captureImage: String!
     
-    func getRecommends() {
-        
-    }
-    
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("RecommendTableViewCell", forIndexPath: indexPath)
-        return cell
-    }
-    
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return recommends.count
-    }
-
 }

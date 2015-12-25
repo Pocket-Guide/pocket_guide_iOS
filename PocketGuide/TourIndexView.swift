@@ -11,6 +11,8 @@ import UIKit
 class TourIndexView: UIView {
     @IBOutlet weak var tourIndexTableView: UITableView!
     
+    
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         
