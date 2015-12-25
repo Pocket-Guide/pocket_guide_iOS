@@ -12,6 +12,7 @@ class RecommendViewController: UIViewController, UITableViewDelegate {
     let answerManager = AnswerManager.sharedAnswerManager
     let recommendManager = RecommendManager.sharedRecommendManager
     let currentUser = CurrentUser.sharedCurrentUser
+    var selectedRecommend: Recommend!
     
     override func loadView() {
         super.loadView()
@@ -42,12 +43,14 @@ class RecommendViewController: UIViewController, UITableViewDelegate {
     
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        selectedRecommend = recommendManager.recommends[indexPath.row]
+        print(selectedRecommend)
         performSegueWithIdentifier("ShowDetailViewController", sender: nil)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let navigationController = segue.destinationViewController as! UINavigationController
-        let DetailViewController = navigationController.
+        let detailViewController = segue.destinationViewController as! DetailViewController
+        detailViewController.recommend = selectedRecommend
     }
     
     func close() {
