@@ -37,9 +37,7 @@ class AnswerManager: NSObject {
         var parameters = [String:AnyObject]()
         parameters["title"] = plan.title
         parameters["prefecture"] = plan.prefecture
-        print(plan.prefecture)
         parameters["answers_attributes"] = answersAttributes
-        print(parameters)
         
         Alamofire.request(.POST, URL, headers: headers, parameters: parameters).response {
             (request, response, data, error) in

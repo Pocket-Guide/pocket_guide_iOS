@@ -13,6 +13,7 @@ import SwiftyJSON
 class RecommendManager: NSObject, UITableViewDataSource {
     static let sharedRecommendManager = RecommendManager()
     var recommends = [Recommend]()
+    let answerManager = AnswerManager.sharedAnswerManager
     
     func getRecommend(token: String, planID: Int, callback: () -> Void) {
         let headers = ["Authorization": "Bearer \(token)"]
@@ -49,5 +50,30 @@ class RecommendManager: NSObject, UITableViewDataSource {
             cell.cellImage.image = image
         }
         return cell
+    }
+    
+    func saveSelectedRecommends(token: String, callback: () -> Void) {
+        let headers = ["Authorization": "Bearer \(token)"]
+        let planID = answerManager.planID
+        let URL = "http://localhost:3000/current_tourist/me/plans/\(planID)/locations"
+        
+        var recommendArray = [[String:Int]()]
+        for recommend in recommends {
+            var recommendDic = [String:Int]()
+            recommendDic["id"] = recommend.id
+            recommendDic["status"] = recommend.status
+            recommendArray.append(recommendDic)
+        }
+        var parameters = [String:AnyObject]()
+        parameters["locations"] = recommendArray
+        
+        Alamofire.request(.POST, URL, parameters: parameters, encoding: .URL, headers: headers).response {
+            (request, response, data, error) in
+            if error == nil {
+                let json = JSON(data: data!)
+                print(json)
+            }
+        }
+        
     }
 }

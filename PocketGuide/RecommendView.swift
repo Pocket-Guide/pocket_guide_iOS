@@ -11,6 +11,7 @@ import UIKit
 class RecommendView: UIView {
     @IBOutlet weak var recommendTableView: UITableView!
     @IBOutlet weak var closeButton: UIButton!
+    @IBOutlet weak var saveButton: UIButton!
     
     override func layoutSubviews() {
         super.layoutSubviews()

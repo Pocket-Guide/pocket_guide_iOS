@@ -29,6 +29,7 @@ class RecommendViewController: UIViewController, UITableViewDelegate {
         recommendManager.getRecommend(currentUser.oauthToken!, planID: answerManager.planID) { () -> Void in
             recommendView.recommendTableView.reloadData()
         }
+        recommendView.saveButton.addTarget(self, action: "save", forControlEvents: .TouchUpInside)
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -55,6 +56,12 @@ class RecommendViewController: UIViewController, UITableViewDelegate {
     
     func close() {
         dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func save() {
+        recommendManager.saveSelectedRecommends(currentUser.oauthToken!) { () -> Void in
+            self.dismissViewControllerAnimated(true, completion: nil)
+        }
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {

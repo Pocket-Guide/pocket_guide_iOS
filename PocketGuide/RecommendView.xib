@@ -18,16 +18,34 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uZT-hv-Uxz">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p5B-uX-gDs">
-                            <rect key="frame" x="12" y="17" width="39" height="30"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p5B-uX-gDs">
+                            <rect key="frame" x="16" y="17" width="59" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="59" id="IJM-WN-e2g"/>
+                                <constraint firstAttribute="height" constant="30" id="oJw-5y-UFi"/>
+                            </constraints>
                             <state key="normal" title="Close">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLT-ZX-qnc">
+                            <rect key="frame" x="292" y="17" width="67" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="67" id="9Yz-DA-a1S"/>
+                                <constraint firstAttribute="height" constant="30" id="qRg-GF-YMs"/>
+                            </constraints>
+                            <state key="normal" title="Save Plan">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                         </button>
                     </subviews>
                     <color key="backgroundColor" red="0.45882352939999999" green="0.6588235294" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
+                        <constraint firstItem="RLT-ZX-qnc" firstAttribute="top" secondItem="uZT-hv-Uxz" secondAttribute="top" constant="17" id="GB6-jR-N9Y"/>
+                        <constraint firstAttribute="trailing" secondItem="RLT-ZX-qnc" secondAttribute="trailing" constant="16" id="ZZe-Pj-kNm"/>
                         <constraint firstAttribute="height" constant="64" id="aNP-8P-agI"/>
+                        <constraint firstItem="p5B-uX-gDs" firstAttribute="leading" secondItem="uZT-hv-Uxz" secondAttribute="leading" constant="16" id="bfB-Zg-8cY"/>
+                        <constraint firstItem="p5B-uX-gDs" firstAttribute="top" secondItem="uZT-hv-Uxz" secondAttribute="top" constant="17" id="nmv-Da-DEg"/>
                     </constraints>
                 </view>
             </subviews>
@@ -51,6 +69,7 @@
             <connections>
                 <outlet property="closeButton" destination="p5B-uX-gDs" id="XHC-eb-y7b"/>
                 <outlet property="recommendTableView" destination="LNV-f0-ckp" id="qHu-TM-Lw8"/>
+                <outlet property="saveButton" destination="RLT-ZX-qnc" id="OC6-H7-8cR"/>
             </connections>
         </view>
     </objects>

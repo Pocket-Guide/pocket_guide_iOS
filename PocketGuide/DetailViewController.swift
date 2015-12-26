@@ -44,5 +44,15 @@ class DetailViewController: UIViewController {
     }
     
     func tapFavoriteButton() {
+        let detailView = view as! DetailView
+        if recommend.status == 0 {
+            recommend.status = 1
+            detailView.favoriteButton.titleLabel?.text = "行きたいを取り消す"
+            print(recommend.status)
+        } else if recommend.status == 1 {
+            recommend.status = 0
+            detailView.favoriteButton.titleLabel?.text = "行きたい"
+            print(recommend.status)
+        }
     }
 }
